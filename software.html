@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Bioinformatics Software and Tools</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="research.html">Research</a></div>
+<div class="menu-item"><a href="publications.html">Publications</a></div>
+<div class="menu-item"><a href="software.html">Software&nbsp;Tools</a></div>
+<div class="menu-item"><a href="resources.html">Resources</a></div>
+<div class="menu-item"><a href="teaching.html">Teaching</a></div>
+<div class="menu-item"><a href="interest.html">Interests</a></div>
+<div class="menu-item"><a href="contact.html">Contact</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Bioinformatics Software and Tools</h1>
+</div>
+<table class="imgtable"><tr><td>
+<img src="img/software_graphics.jpg" alt="Software Graphics" height="180px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<h2>Software Developed at University of Glasgow</h2>
+<h3>vChIP: SVM based identification of TF binding sites</h3>
+<p>Genome scale DNA footprinting with DNase1, coupled with deep sequencing is a method called Digital Genomic Footprinting (DGF) that can give information about transcription factor occupancy in a single experiment. Transcription factors bound to DNA can impart unique “signature” in DNase1 DGF experiments. vChip uses these protein specific signature patterns at the known binding sites to train the machine learning “support vector machine” (SVM) models. These models are used to detect the instances of TF binding in the chromatin where ChIP-seq data is not available in the same or different cell lines. <br />
+<a href="https://github.com/narekum/vChIP">https://github.com/narekum/vChIP</a> </p>
+<h3>locStack: Meta-analysis of genomic features</h3>
+<p>locStack enables the characterisation and analysis of DNA footprints using high throughput DNase1 DGF sequencing data. Given the locations of the transcription factor binding sites in bed format, locStack can plot the DNase1 cut frequency profiles of the footprints at the single nucleotide resolution. locStack calculates the expected cut frequency profiles at each position in the footprint and the surrounding region, and reports the profile as log2 ratio of observed vs expected DNase1 cut frequencies. The profiles are calculated in a strand specific manner. The matrices reported by the locStack could be used to generate the heatmaps of the profile and the further downstream analysis. locStack could also be used to produce the average composite profile of any ChIP-seq data at the desired genomic locations. The package in written in perl programming language. <br />     
+<a href="https://github.com/narekum/locStack">https://github.com/narekum/locStack</a></p>
+<h3>ChIPseqPipeline: ChIP-seq read alignment and processing pipeline</h3>
+<p>ChIPseqPipeline is the NGS ChIP-seq data processing pipeline. It aligns the sequenced reads in the fastq format to the genomic sequence and produces the files suitable for downstream analysis and viewing of aligned reads on the genome browsers. The pipeline uses Bowtie2 program for aligning the reads to the indexed genome builds. It can handle both the single end reads, and the paired-end reads. The output contains bed/bam files for further analysis, and bigwig files which could be loaded on a genome browser. The pipeline uses samtools for the conversion of data formats. <br />
+<a href="https://github.com/narekum/ChIPseqPipeline">https://github.com/narekum/ChIPseqPipeline</a></p>
+<h3>RNAseqPipeline: RNA-seq paired end read alignment and processing pipeline</h3>
+<p>RNAseqPipeline is the NGS RNA-seq data analysis pipeline. It uses the Tophat2 suite of programs for aligning the sequenced read to the genome of interest, and generates files suitable for differential gene regulation analysis. It handles single end reads as well as paired-end sequenced reads. It produces bigwig tracks which can be readily loaded onto the genome browsers for visualization. The transcript models produced by the pipeline can be used for differential gene expression analysis using cuffdiff and cummerbund. The pipeline is written in perl scripts. <br />
+<a href="https://github.com/narekum/RNAseqPipeline">https://github.com/narekum/RNAseqPipeline</a>
+</p>
+<h2>Software Developed/contributed at Georgia Institute of Technology, Atlanta</h2>
+<h3>EFICAz2.5</h3>
+<p>EFICAz2.5 (Enzyme Function Inference by a Combined Approach) is an automatic engine for large-scale enzyme function inference from protein sequence that combines predictions from six different methods developed and optimized to achieve high prediction accuracy. <br />
+<a href="http://pwp.gatech.edu/cssb/eficaz2-5/">http://pwp.gatech.edu/cssb/eficaz2-5/</a></p>
+<h3>SUNPRO</h3>
+<p>A Database of Structure &amp; FUNction Predictions of Proteins from Representative Organisms. <br />
+<a href="http://cssb.biology.gatech.edu/sites/default/files/sunpro_unpublished.pdf">http://cssb.biology.gatech.edu/sites/default/files/sunpro_unpublished.pdf</a>
+</p>
+<h2>Software Developed/contributed at National Institute of Immunology, New Delhi, INDIA</h2>
+<h3>MODPROPEP</h3>
+<p>MODPROPEP is a structure based program for analysis and prediction of substrates for protein kinases and MHC proteins.<br />
+<a href="https://github.com/narekum/MODPROPEP">https://github.com/narekum/MODPROPEP</a></p>
+<h3>SBSPKS </h3>
+<p>Structure based sequence analysis of polyketide synthases. (Contributed to Structural Modules) <br />
+<a href="http://www.nii.ac.in/sbspks.html">SBSPKS Version1</a> <br />
+<a href="http://202.54.226.228/~pksdb/sbspks_updated/master.html">SBSPKS Version2</a></p>
+<h3>PDF Library </h3>
+<p>A local resource for archiving and retrieval of peer-reviewed research articles that facilitates fast and easy access of articles to user’s convenience and preference (Not maintained now. I will soon migrate the code to GitHub).
+</p>
+<table class="imgtable"><tr><td>
+<img src="img/powered-by-perl.png" alt="Powered by Perl" width="200px" />&nbsp;</td>
+<td align="left"><p><img src="img/python-logo-master.png" alt="Powered by Python" width="200px" />
+<img src="img/Rlogo.png" alt="Powered by R" width="200px" /></p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="img/linuxmint_logo.png" alt="Coded on LinuxMint" width="200px" />&nbsp;</td>
+<td align="left"><p><img src="img/google_cloud.png" alt="Powered by Google Cloud" width="200px" />
+<img src="img/GitHub_logo.png" alt="Powered by GitHub" width="200px" /></p>
+</td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="img/cpan.jpg" alt="Powered by CPAN" width="200px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<div id="footer">
+<div id="footer-text">
+Page generated 2019-01-25 15:48:43 IST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
