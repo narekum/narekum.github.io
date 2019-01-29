@@ -13,6 +13,7 @@
 <td id="layout-menu">
 <div class="menu-item"><a href="index.html">Home</a></div>
 <div class="menu-item"><a href="research.html">Research</a></div>
+<div class="menu-item"><a href="people.html">People</a></div>
 <div class="menu-item"><a href="publications.html">Publications</a></div>
 <div class="menu-item"><a href="software.html">Software&nbsp;Tools</a></div>
 <div class="menu-item"><a href="resources.html">Resources</a></div>
@@ -29,21 +30,21 @@
 <td align="left"></td></tr></table>
 <h2>Software Developed at University of Glasgow</h2>
 <h3>vChIP: SVM based identification of TF binding sites</h3>
-<p>Genome scale DNA footprinting with DNase1, coupled with deep sequencing is a method called Digital Genomic Footprinting (DGF) that can give information about transcription factor occupancy in a single experiment. Transcription factors bound to DNA can impart unique “signature” in DNase1 DGF experiments. vChip uses these protein specific signature patterns at the known binding sites to train the machine learning “support vector machine” (SVM) models. These models are used to detect the instances of TF binding in the chromatin where ChIP-seq data is not available in the same or different cell lines. <br />
+<p>Genome scale DNA footprinting with DNase1, coupled with deep sequencing is a method called Digital Genomic Footprinting (DGF) that can give information about transcription factor occupancy in a single experiment. Transcription factors bound to DNA can impart unique “signature” in DNase1 DGF experiments. <b>vChip</b> uses these protein specific signature patterns at the known binding sites to train the machine learning “support vector machine” (SVM) models. These models are used to detect the instances of TF binding in the chromatin where ChIP-seq data is not available in the same or different cell lines. <br />
 <a href="https://github.com/narekum/vChIP">https://github.com/narekum/vChIP</a> </p>
 <h3>locStack: Meta-analysis of genomic features</h3>
-<p>locStack enables the characterisation and analysis of DNA footprints using high throughput DNase1 DGF sequencing data. Given the locations of the transcription factor binding sites in bed format, locStack can plot the DNase1 cut frequency profiles of the footprints at the single nucleotide resolution. locStack calculates the expected cut frequency profiles at each position in the footprint and the surrounding region, and reports the profile as log2 ratio of observed vs expected DNase1 cut frequencies. The profiles are calculated in a strand specific manner. The matrices reported by the locStack could be used to generate the heatmaps of the profile and the further downstream analysis. locStack could also be used to produce the average composite profile of any ChIP-seq data at the desired genomic locations. The package in written in perl programming language. <br />     
+<p><b>locStack</b> enables the characterisation and analysis of DNA footprints using high throughput DNase1 DGF sequencing data. Given the locations of the transcription factor binding sites in bed format, locStack can plot the DNase1 cut frequency profiles of the footprints at the single nucleotide resolution. locStack calculates the expected cut frequency profiles at each position in the footprint and the surrounding region, and reports the profile as log2 ratio of observed vs expected DNase1 cut frequencies. The profiles are calculated in a strand specific manner. The matrices reported by the locStack could be used to generate the heatmaps of the profile and the further downstream analysis. locStack could also be used to produce the average composite profile of any ChIP-seq data at the desired genomic locations. The package in written in perl programming language. <br />     
 <a href="https://github.com/narekum/locStack">https://github.com/narekum/locStack</a></p>
 <h3>ChIPseqPipeline: ChIP-seq read alignment and processing pipeline</h3>
-<p>ChIPseqPipeline is the NGS ChIP-seq data processing pipeline. It aligns the sequenced reads in the fastq format to the genomic sequence and produces the files suitable for downstream analysis and viewing of aligned reads on the genome browsers. The pipeline uses Bowtie2 program for aligning the reads to the indexed genome builds. It can handle both the single end reads, and the paired-end reads. The output contains bed/bam files for further analysis, and bigwig files which could be loaded on a genome browser. The pipeline uses samtools for the conversion of data formats. <br />
+<p><b>ChIPseqPipeline</b> is a NGS ChIP-seq data processing pipeline. It aligns the sequenced reads in the fastq format to the genomic sequence and produces the files suitable for downstream analysis and viewing of aligned reads on the genome browsers. The pipeline uses Bowtie2 program for aligning the reads to the indexed genome builds. It can handle both the single end reads, and the paired-end reads. The output contains bed/bam files for further analysis, and bigwig files which could be loaded on a genome browser. The pipeline uses samtools for the conversion of data formats. <br />
 <a href="https://github.com/narekum/ChIPseqPipeline">https://github.com/narekum/ChIPseqPipeline</a></p>
 <h3>RNAseqPipeline: RNA-seq paired end read alignment and processing pipeline</h3>
-<p>RNAseqPipeline is the NGS RNA-seq data analysis pipeline. It uses the Tophat2 suite of programs for aligning the sequenced read to the genome of interest, and generates files suitable for differential gene regulation analysis. It handles single end reads as well as paired-end sequenced reads. It produces bigwig tracks which can be readily loaded onto the genome browsers for visualization. The transcript models produced by the pipeline can be used for differential gene expression analysis using cuffdiff and cummerbund. The pipeline is written in perl scripts. <br />
+<p><b>RNAseqPipeline</b> is a NGS RNA-seq data analysis pipeline. It uses the Tophat2 suite of programs for aligning the sequenced read to the genome of interest, and generates files suitable for differential gene regulation analysis. It handles single end reads as well as paired-end sequenced reads. It produces bigwig tracks which can be readily loaded onto the genome browsers for visualization. The transcript models produced by the pipeline can be used for differential gene expression analysis using cuffdiff and cummerbund. The pipeline is written in perl scripts. <br />
 <a href="https://github.com/narekum/RNAseqPipeline">https://github.com/narekum/RNAseqPipeline</a>
 </p>
 <h2>Software Developed/contributed at Georgia Institute of Technology, Atlanta</h2>
 <h3>EFICAz2.5</h3>
-<p>EFICAz2.5 (Enzyme Function Inference by a Combined Approach) is an automatic engine for large-scale enzyme function inference from protein sequence that combines predictions from six different methods developed and optimized to achieve high prediction accuracy. <br />
+<p><b>EFICAz2.5</b> (Enzyme Function Inference by a Combined Approach) is an automatic engine for large-scale enzyme function inference from protein sequence that combines predictions from six different methods developed and optimized to achieve high prediction accuracy. <br />
 <a href="http://pwp.gatech.edu/cssb/eficaz2-5/">http://pwp.gatech.edu/cssb/eficaz2-5/</a></p>
 <h3>SUNPRO</h3>
 <p>A Database of Structure &amp; FUNction Predictions of Proteins from Representative Organisms. <br />
@@ -51,7 +52,7 @@
 </p>
 <h2>Software Developed/contributed at National Institute of Immunology, New Delhi, INDIA</h2>
 <h3>MODPROPEP</h3>
-<p>MODPROPEP is a structure based program for analysis and prediction of substrates for protein kinases and MHC proteins.<br />
+<p><b>MODPROPEP</b> is a structure based program for analysis and prediction of substrates for protein kinases and MHC proteins.<br />
 <a href="https://github.com/narekum/MODPROPEP">https://github.com/narekum/MODPROPEP</a></p>
 <h3>SBSPKS </h3>
 <p>Structure based sequence analysis of polyketide synthases. (Contributed to Structural Modules) <br />
@@ -75,7 +76,7 @@
 <td align="left"></td></tr></table>
 <div id="footer">
 <div id="footer-text">
-Page generated 2019-01-25 16:10:29 IST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+Page generated 2019-01-29 15:47:45 IST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 </div>
 </div>
 </td>

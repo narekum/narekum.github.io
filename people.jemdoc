@@ -1,0 +1,17 @@
+# jemdoc: menu{MENU}{people.html}
+= People
+
+~~~
+{}{img_left}{img/}{}{200}{}{}
+{{<img src="img/people2.png" alt="Avengers1" width="230px" /> 
+  <img src="img/people6.png" alt="Avengers2" width="230px" /> 
+  <img src="img/people7.png" alt="Avengers2" width="230px" /> 
+  <img src="img/people4.png" alt="Avengers2" width="230px" /> }}
+~~~
+
+== PhD Candidate
+Mr Rohit Shukla (July 2018 - )
+
+== B.Tech (Bioinformatics) 4th Year Project Students
+. Mr Mandeep Singh (July 2018 - June 2019 )
+. Ms Rashika Singhal (July 2018 - June 2019 )

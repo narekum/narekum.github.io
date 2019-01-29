@@ -8,19 +8,19 @@
 == Software Developed at University of Glasgow
 
 === vChIP: SVM based identification of TF binding sites
-Genome scale DNA footprinting with DNase1, coupled with deep sequencing is a method called Digital Genomic Footprinting (DGF) that can give information about transcription factor occupancy in a single experiment. Transcription factors bound to DNA can impart unique “signature” in DNase1 DGF experiments. vChip uses these protein specific signature patterns at the known binding sites to train the machine learning “support vector machine” (SVM) models. These models are used to detect the instances of TF binding in the chromatin where ChIP-seq data is not available in the same or different cell lines. \n
+Genome scale DNA footprinting with DNase1, coupled with deep sequencing is a method called Digital Genomic Footprinting (DGF) that can give information about transcription factor occupancy in a single experiment. Transcription factors bound to DNA can impart unique “signature” in DNase1 DGF experiments. *vChip* uses these protein specific signature patterns at the known binding sites to train the machine learning “support vector machine” (SVM) models. These models are used to detect the instances of TF binding in the chromatin where ChIP-seq data is not available in the same or different cell lines. \n
 [https://github.com/narekum/vChIP] 
 
 === locStack: Meta-analysis of genomic features
-locStack enables the characterisation and analysis of DNA footprints using high throughput DNase1 DGF sequencing data. Given the locations of the transcription factor binding sites in bed format, locStack can plot the DNase1 cut frequency profiles of the footprints at the single nucleotide resolution. locStack calculates the expected cut frequency profiles at each position in the footprint and the surrounding region, and reports the profile as log2 ratio of observed vs expected DNase1 cut frequencies. The profiles are calculated in a strand specific manner. The matrices reported by the locStack could be used to generate the heatmaps of the profile and the further downstream analysis. locStack could also be used to produce the average composite profile of any ChIP-seq data at the desired genomic locations. The package in written in perl programming language. \n     
+*locStack* enables the characterisation and analysis of DNA footprints using high throughput DNase1 DGF sequencing data. Given the locations of the transcription factor binding sites in bed format, locStack can plot the DNase1 cut frequency profiles of the footprints at the single nucleotide resolution. locStack calculates the expected cut frequency profiles at each position in the footprint and the surrounding region, and reports the profile as log2 ratio of observed vs expected DNase1 cut frequencies. The profiles are calculated in a strand specific manner. The matrices reported by the locStack could be used to generate the heatmaps of the profile and the further downstream analysis. locStack could also be used to produce the average composite profile of any ChIP-seq data at the desired genomic locations. The package in written in perl programming language. \n     
 [https://github.com/narekum/locStack]
 
 === ChIPseqPipeline: ChIP-seq read alignment and processing pipeline
-ChIPseqPipeline is the NGS ChIP-seq data processing pipeline. It aligns the sequenced reads in the fastq format to the genomic sequence and produces the files suitable for downstream analysis and viewing of aligned reads on the genome browsers. The pipeline uses Bowtie2 program for aligning the reads to the indexed genome builds. It can handle both the single end reads, and the paired-end reads. The output contains bed/bam files for further analysis, and bigwig files which could be loaded on a genome browser. The pipeline uses samtools for the conversion of data formats. \n
+*ChIPseqPipeline* is a NGS ChIP-seq data processing pipeline. It aligns the sequenced reads in the fastq format to the genomic sequence and produces the files suitable for downstream analysis and viewing of aligned reads on the genome browsers. The pipeline uses Bowtie2 program for aligning the reads to the indexed genome builds. It can handle both the single end reads, and the paired-end reads. The output contains bed/bam files for further analysis, and bigwig files which could be loaded on a genome browser. The pipeline uses samtools for the conversion of data formats. \n
 [https://github.com/narekum/ChIPseqPipeline]
 
 === RNAseqPipeline: RNA-seq paired end read alignment and processing pipeline
-RNAseqPipeline is the NGS RNA-seq data analysis pipeline. It uses the Tophat2 suite of programs for aligning the sequenced read to the genome of interest, and generates files suitable for differential gene regulation analysis. It handles single end reads as well as paired-end sequenced reads. It produces bigwig tracks which can be readily loaded onto the genome browsers for visualization. The transcript models produced by the pipeline can be used for differential gene expression analysis using cuffdiff and cummerbund. The pipeline is written in perl scripts. \n
+*RNAseqPipeline* is a NGS RNA-seq data analysis pipeline. It uses the Tophat2 suite of programs for aligning the sequenced read to the genome of interest, and generates files suitable for differential gene regulation analysis. It handles single end reads as well as paired-end sequenced reads. It produces bigwig tracks which can be readily loaded onto the genome browsers for visualization. The transcript models produced by the pipeline can be used for differential gene expression analysis using cuffdiff and cummerbund. The pipeline is written in perl scripts. \n
 [https://github.com/narekum/RNAseqPipeline]
 #~~~
 
@@ -28,7 +28,7 @@ RNAseqPipeline is the NGS RNA-seq data analysis pipeline. It uses the Tophat2 su
 == Software Developed/contributed at Georgia Institute of Technology, Atlanta
 
 === EFICAz2.5
-EFICAz2.5 (Enzyme Function Inference by a Combined Approach) is an automatic engine for large-scale enzyme function inference from protein sequence that combines predictions from six different methods developed and optimized to achieve high prediction accuracy. \n
+*EFICAz2.5* (Enzyme Function Inference by a Combined Approach) is an automatic engine for large-scale enzyme function inference from protein sequence that combines predictions from six different methods developed and optimized to achieve high prediction accuracy. \n
 [http://pwp.gatech.edu/cssb/eficaz2-5/]
 
 === SUNPRO
@@ -40,7 +40,7 @@ A Database of Structure & FUNction Predictions of Proteins from Representative O
 == Software Developed/contributed at National Institute of Immunology, New Delhi, INDIA
 
 === MODPROPEP
-MODPROPEP is a structure based program for analysis and prediction of substrates for protein kinases and MHC proteins.\n
+*MODPROPEP* is a structure based program for analysis and prediction of substrates for protein kinases and MHC proteins.\n
 [https://github.com/narekum/MODPROPEP]
 
 === SBSPKS 
