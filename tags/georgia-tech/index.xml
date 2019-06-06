@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Georgia Tech on Narendra Kumar</title>
+    <link>/tags/georgia-tech/</link>
+    <description>Recent content in Georgia Tech on Narendra Kumar</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Narendra Kumar {year} </copyright>
+    <lastBuildDate>Thu, 06 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/georgia-tech/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>EFICAz2.5</title>
+      <link>/project/eficaz2.5/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/project/eficaz2.5/</guid>
+      <description>Enzyme Function Inference by a Combined Approach</description>
+    </item>
+    
+    <item>
+      <title>SUNPRO</title>
+      <link>/project/sunpro/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/project/sunpro/</guid>
+      <description>A Database of Structure &amp;amp; FUNction Predictions of Proteins from Representative Organisms.</description>
+    </item>
+    
+  </channel>
+</rss>

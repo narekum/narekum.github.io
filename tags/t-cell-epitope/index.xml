@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>T-cell Epitope on Narendra Kumar</title>
+    <link>/tags/t-cell-epitope/</link>
+    <description>Recent content in T-cell Epitope on Narendra Kumar</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Narendra Kumar {year} </copyright>
+    <lastBuildDate>Thu, 06 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/t-cell-epitope/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MODPROPEP</title>
+      <link>/project/modpropep/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/project/modpropep/</guid>
+      <description>MODPROPEP is a structure based program for analysis and prediction of substrates for protein kinases and MHC proteins</description>
+    </item>
+    
+    <item>
+      <title>Structure-based identification of MHC binding peptides: Benchmarking of prediction accuracy</title>
+      <link>/publication/04_mhc_binding/</link>
+      <pubDate>Mon, 18 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/04_mhc_binding/</guid>
+      <description> Click the Cite button above to demo the feature to enable visitors to import publication metadata into their reference management software.    Click the Slides button above to demo Academic&amp;rsquo;s Markdown slides feature.   Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/). -- </description>
+    </item>
+    
+    <item>
+      <title>MODPROPEP: a program for knowledge-based modeling of protein–peptide complexes</title>
+      <link>/publication/01_modpropep/</link>
+      <pubDate>Sun, 01 Jul 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/01_modpropep/</guid>
+      <description> Click the Cite button above to demo the feature to enable visitors to import publication metadata into their reference management software.    Click the Slides button above to demo Academic&amp;rsquo;s Markdown slides feature.   Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/). -- </description>
+    </item>
+    
+  </channel>
+</rss>

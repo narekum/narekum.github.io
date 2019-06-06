@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Raymond Hui on Narendra Kumar</title>
+    <link>/authors/raymond-hui/</link>
+    <description>Recent content in Raymond Hui on Narendra Kumar</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Narendra Kumar {year} </copyright>
+    <lastBuildDate>Wed, 01 Aug 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/authors/raymond-hui/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Novel insights into the regulation of malarial calcium-dependent protein kinase 1</title>
+      <link>/publication/06_pfpkb/</link>
+      <pubDate>Wed, 01 Aug 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/06_pfpkb/</guid>
+      <description> Click the Cite button above to demo the feature to enable visitors to import publication metadata into their reference management software.    Click the Slides button above to demo Academic&amp;rsquo;s Markdown slides feature.   Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/). -- </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>National Instt of Immunology on Narendra Kumar</title>
+    <link>/tags/national-instt-of-immunology/</link>
+    <description>Recent content in National Instt of Immunology on Narendra Kumar</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Narendra Kumar {year} </copyright>
+    <lastBuildDate>Thu, 06 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/national-instt-of-immunology/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MODPROPEP</title>
+      <link>/project/modpropep/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/project/modpropep/</guid>
+      <description>MODPROPEP is a structure based program for analysis and prediction of substrates for protein kinases and MHC proteins</description>
+    </item>
+    
+    <item>
+      <title>PDF Library</title>
+      <link>/project/pdflibrary/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/project/pdflibrary/</guid>
+      <description>A local resource for archiving and retrieval of peer-reviewed research articles</description>
+    </item>
+    
+    <item>
+      <title>SBSPKS</title>
+      <link>/project/sbspks/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/project/sbspks/</guid>
+      <description>Structure based sequence analysis of polyketide synthases. (Contributed to Structural Modules)</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hongyi Zhou on Narendra Kumar</title>
+    <link>/authors/hongyi-zhou/</link>
+    <description>Recent content in Hongyi Zhou on Narendra Kumar</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Narendra Kumar {year} </copyright>
+    <lastBuildDate>Sun, 01 Jan 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/authors/hongyi-zhou/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SUNPRO: Structure and function predictions of proteins from representative organisms</title>
+      <link>/publication/05_sunpro/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/05_sunpro/</guid>
+      <description> Click the Cite button above to demo the feature to enable visitors to import publication metadata into their reference management software.    Click the Slides button above to demo Academic&amp;rsquo;s Markdown slides feature.   Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/). -- </description>
+    </item>
+    
+  </channel>
+</rss>

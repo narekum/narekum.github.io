@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Narendra Kumar</title>
+    <link>/</link>
+    <description>Recent content on Narendra Kumar</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Narendra Kumar {year} </copyright>
+    <lastBuildDate>Thu, 06 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ChIPseq-Pipeline</title>
+      <link>/project/chipseqpipeline/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/project/chipseqpipeline/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;ChIPseqPipeline&lt;/strong&gt; is a NGS ChIP-seq data processing pipeline. It aligns the sequenced reads in the fastq format to the genomic sequence and produces the files suitable for downstream analysis and viewing of aligned reads on the genome browsers. The pipeline uses Bowtie2 program for aligning the reads to the indexed genome builds. It can handle both the single end reads, and the paired-end reads. The output contains bed/bam files for further analysis, and bigwig files which could be loaded on a genome browser. The pipeline uses samtools for the conversion of data formats.
+&lt;a href=&#34;https://github.com/narekum/ChIPseqPipeline&#34; target=&#34;_blank&#34;&gt;https://github.com/narekum/ChIPseqPipeline&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>EFICAz2.5</title>
+      <link>/project/eficaz2.5/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/project/eficaz2.5/</guid>
+      <description>&lt;p&gt;EFICAz2.5 (Enzyme Function Inference by a Combined Approach) is an automatic engine for large-scale enzyme function inference from protein sequence that combines predictions from six different methods developed and optimized to achieve high prediction accuracy.
+&lt;a href=&#34;http://pwp.gatech.edu/cssb/eficaz2-5/&#34; target=&#34;_blank&#34;&gt;http://pwp.gatech.edu/cssb/eficaz2-5/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MODPROPEP</title>
+      <link>/project/modpropep/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/project/modpropep/</guid>
+      <description>&lt;p&gt;MODPROPEP is a structure based program for analysis and prediction of substrates for protein kinases and MHC proteins.
+&lt;a href=&#34;https://github.com/narekum/MODPROPEP&#34; target=&#34;_blank&#34;&gt;https://github.com/narekum/MODPROPEP&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PDF Library</title>
+      <link>/project/pdflibrary/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/project/pdflibrary/</guid>
+      <description>&lt;p&gt;A local resource for archiving and retrieval of peer-reviewed research articles that facilitates fast and easy access of articles to user’s convenience and preference (Not maintained now. I will soon migrate the code to GitHub).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>RNAseq-Pipeline</title>
+      <link>/project/rnaseqpipeline/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/project/rnaseqpipeline/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;ChIPseqPipeline&lt;/strong&gt; is a NGS ChIP-seq data processing pipeline. It aligns the sequenced reads in the fastq format to the genomic sequence and produces the files suitable for downstream analysis and viewing of aligned reads on the genome browsers. The pipeline uses Bowtie2 program for aligning the reads to the indexed genome builds. It can handle both the single end reads, and the paired-end reads. The output contains bed/bam files for further analysis, and bigwig files which could be loaded on a genome browser. The pipeline uses samtools for the conversion of data formats.
+&lt;a href=&#34;https://github.com/narekum/ChIPseqPipeline&#34; target=&#34;_blank&#34;&gt;https://github.com/narekum/ChIPseqPipeline&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SBSPKS</title>
+      <link>/project/sbspks/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/project/sbspks/</guid>
+      <description>&lt;p&gt;Structure based sequence analysis of polyketide synthases. (Contributed to Structural Modules)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.nii.ac.in/sbspks.html&#34; target=&#34;_blank&#34;&gt;SBSPKS Version1&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://202.54.226.228/~pksdb/sbspks_updated/master.html&#34; target=&#34;_blank&#34;&gt;SBSPKS Version2&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SUNPRO</title>
+      <link>/project/sunpro/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/project/sunpro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>locStack</title>
+      <link>/project/locstack/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/project/locstack/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;locStack&lt;/strong&gt; enables the characterisation and analysis of DNA footprints using high throughput DNase1 DGF sequencing data. Given the locations of the transcription factor binding sites in bed format, locStack can plot the DNase1 cut frequency profiles of the footprints at the single nucleotide resolution. locStack calculates the expected cut frequency profiles at each position in the footprint and the surrounding region, and reports the profile as log2 ratio of observed vs expected DNase1 cut frequencies. The profiles are calculated in a strand specific manner. The matrices reported by the locStack could be used to generate the heatmaps of the profile and the further downstream analysis. locStack could also be used to produce the average composite profile of any ChIP-seq data at the desired genomic locations. The package in written in perl programming language.
+&lt;a href=&#34;https://github.com/narekum/locStack&#34; target=&#34;_blank&#34;&gt;https://github.com/narekum/locStack&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>vChIP</title>
+      <link>/project/vchip/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/project/vchip/</guid>
+      <description>&lt;p&gt;Genome scale DNA footprinting with DNase1, coupled with deep sequencing is a method called Digital Genomic Footprinting (DGF) that can give information about transcription factor occupancy in a single experiment. Transcription factors bound to DNA can impart unique “signature” in DNase1 DGF experiments. &lt;strong&gt;vChip&lt;/strong&gt; uses these protein specific signature patterns at the known binding sites to train the machine learning “support vector machine” (SVM) models. These models are used to detect the instances of TF binding in the chromatin where ChIP-seq data is not available in the same or different cell lines.
+&lt;a href=&#34;https://github.com/narekum/vChIP&#34; target=&#34;_blank&#34;&gt;https://github.com/narekum/vChIP&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Improved catalytic properties of a serine hydroxymethyl transferase from Idiomarina loihiensis by site directed mutagenesis</title>
+      <link>/publication/10_improved_cat/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/10_improved_cat/</guid>
+      <description>&lt;!--
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SBSPKSv2: structure-based sequence analysis of polyketide synthases and non-ribosomal peptide synthetases</title>
+      <link>/publication/09_sbspksv2/</link>
+      <pubDate>Sat, 29 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/09_sbspksv2/</guid>
+      <description>&lt;!--
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Getting Phosphorylated: Is it Necessary to be Solvent Accessible?</title>
+      <link>/publication/08_phosphorylation/</link>
+      <pubDate>Sun, 01 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/08_phosphorylation/</guid>
+      <description>&lt;!--
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>EFICAz2. 5: application of a high-precision enzyme function predictor to 396 proteomes</title>
+      <link>/publication/07_eficaz2.5/</link>
+      <pubDate>Mon, 15 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/07_eficaz2.5/</guid>
+      <description>&lt;!--
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Novel insights into the regulation of malarial calcium-dependent protein kinase 1</title>
+      <link>/publication/06_pfpkb/</link>
+      <pubDate>Wed, 01 Aug 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/06_pfpkb/</guid>
+      <description>&lt;!--
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SUNPRO: Structure and function predictions of proteins from representative organisms</title>
+      <link>/publication/05_sunpro/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/05_sunpro/</guid>
+      <description>&lt;!--
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Structure-based identification of MHC binding peptides: Benchmarking of prediction accuracy</title>
+      <link>/publication/04_mhc_binding/</link>
+      <pubDate>Mon, 18 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/04_mhc_binding/</guid>
+      <description>&lt;!--
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SBSPKS: structure based sequence analysis of polyketide synthases</title>
+      <link>/publication/03_spspks/</link>
+      <pubDate>Thu, 01 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/03_spspks/</guid>
+      <description>&lt;!--
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Identification of substrates for Ser/Thr kinases using residue-based statistical pair potentials</title>
+      <link>/publication/02_pkinase/</link>
+      <pubDate>Thu, 12 Nov 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/02_pkinase/</guid>
+      <description>&lt;!--
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MODPROPEP: a program for knowledge-based modeling of protein–peptide complexes</title>
+      <link>/publication/01_modpropep/</link>
+      <pubDate>Sun, 01 Jul 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/01_modpropep/</guid>
+      <description>&lt;!--
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
