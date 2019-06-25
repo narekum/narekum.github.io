@@ -7,10 +7,106 @@
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Narendra Kumar {year} </copyright>
-    <lastBuildDate>Thu, 06 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Jun 2019 20:05:49 +0530</lastBuildDate>
     
 	    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Creating New Environment With Anaconda</title>
+      <link>/post/creating-new-environment-with-anaconda/</link>
+      <pubDate>Mon, 24 Jun 2019 20:05:49 +0530</pubDate>
+      
+      <guid>/post/creating-new-environment-with-anaconda/</guid>
+      <description>
+
+&lt;p&gt;Today I was working with &lt;a href=&#34;http://networkx.github.io/&#34; target=&#34;_blank&#34;&gt;networkx API&lt;/a&gt; and wanted to draw &lt;a href=&#34;https://archive.nytimes.com/www.nytimes.com/imagepages/2007/01/22/science/20070123_SCI_ILLO.html&#34; target=&#34;_blank&#34;&gt;CircosPlot&lt;/a&gt; of a sample of GitHub user collaboration data . I had networkx, nxviz, matplotlib installed in my current shell environment so plotting should have been eventless.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import networkx as nx
+import matplotlib.pyplot as plt
+import nxviz as nv
+
+G = nx.read_gpickle(&#39;github.p&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Before moving further I decided to check if everything was ok&amp;hellip;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;G.nodes()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+&amp;lt;ipython-input-3-083f395b092f&amp;gt; in &amp;lt;module&amp;gt;
+----&amp;gt; 1 G.nodes()
+.
+.
+.
+AttributeError: &#39;Graph&#39; object has no attribute &#39;_node&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The problem here is the pickle file &lt;code&gt;github.p&lt;/code&gt; which was created using networkx version 1.11 while I had version 2.2 installed.&lt;/p&gt;
+
+&lt;p&gt;Checking the list of installed packages and their versions&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;pip list
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Obvious solution to the problem here is to downgrade networkx package to version 1.11. But this may break other piece of code which works fine on this machine.&lt;/p&gt;
+
+&lt;p&gt;This is a perfect scenario for using virtual environment. A virtual environment is a named copy of python complete with its own environment variables, packages and dependencies which is isolated from other environments on the system. You can load this environment and install desired versions of the packages and their dependencies. The packages in other environment will remain installed but will not be used. You can create a virtual environment using &lt;code&gt;conda&lt;/code&gt; command. You need to be running the anaconda distribution of python.&lt;/p&gt;
+
+&lt;h3 id=&#34;creating-a-new-virtual-environment&#34;&gt;Creating a new virtual environment&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;$ conda create -n networkx_downgrade python=3.7 anaconda
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This creates a new conda environment with a name &amp;lsquo;networkx_downgrade&amp;rsquo;.&lt;/p&gt;
+
+&lt;h3 id=&#34;loading-the-new-environments&#34;&gt;Loading the new environments&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;$ conda activate networkx_downgrade
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will load the newly created virtual environment. Now you can uninstall and install the desired versions of packages and their dependencies&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;$ pip uninstall networkx
+$ pip install networkx==1.11
+$ pip uninstall nxviz
+$ pip install nxviz==0.3.1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;At this point you can also check the versions of packages on which just downgraded package depended and update them accordingly.&lt;/p&gt;
+
+&lt;p&gt;The original installed versions of the programs are safe in other environment that can be loaded if you need them.&lt;/p&gt;
+
+&lt;p&gt;To deactivate an active environment, do following&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;$ conda deactivate
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Checking if my problem is solved&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import networkx as nx
+import matplotlib.pyplot as plt
+import nxviz as nv
+
+G = nx.read_gpickle(&#39;github.p&#39;)
+
+G.nodes()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;[&#39;u10002&#39;,
+ &#39;u21097&#39;,
+ &#39;u24070&#39;,
+ &#39;u31908&#39;,
+ .
+ .
+ .
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Perfect!&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>ChIPseq-Pipeline</title>

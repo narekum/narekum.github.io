@@ -7,10 +7,55 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Narendra Kumar {year} </copyright>
-    <lastBuildDate>Thu, 06 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Jun 2019 20:05:49 +0530</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Anaconda</title>
+      <link>/tags/anaconda/</link>
+      <pubDate>Mon, 24 Jun 2019 20:05:49 +0530</pubDate>
+      
+      <guid>/tags/anaconda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>/tags/python/</link>
+      <pubDate>Mon, 24 Jun 2019 20:05:49 +0530</pubDate>
+      
+      <guid>/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python Environments</title>
+      <link>/tags/python-environments/</link>
+      <pubDate>Mon, 24 Jun 2019 20:05:49 +0530</pubDate>
+      
+      <guid>/tags/python-environments/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>conda</title>
+      <link>/tags/conda/</link>
+      <pubDate>Mon, 24 Jun 2019 20:05:49 +0530</pubDate>
+      
+      <guid>/tags/conda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>networkx</title>
+      <link>/tags/networkx/</link>
+      <pubDate>Mon, 24 Jun 2019 20:05:49 +0530</pubDate>
+      
+      <guid>/tags/networkx/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Binding Energy Calculation</title>
