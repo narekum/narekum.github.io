@@ -13,12 +13,14 @@
     
     
     <item>
-      <title>Creating New Environment With Anaconda</title>
-      <link>/post/creating-new-environment-with-anaconda/</link>
+      <title>Creating New Environment With Conda</title>
+      <link>/2019/06/24/creating-new-environment-with-conda/</link>
       <pubDate>Mon, 24 Jun 2019 20:05:49 +0530</pubDate>
       
-      <guid>/post/creating-new-environment-with-anaconda/</guid>
+      <guid>/2019/06/24/creating-new-environment-with-conda/</guid>
       <description>
+
+&lt;p&gt;One of the frustrating things bioinformaticians encounter routinely is the incompatibities among packages and their dependencies when they upgrade a package. An update is recommended because it usually offers more efficient, elegant and secure functionalities to the users. However, this comes at a price. An update may break an existing workflow or pipelines installed on the system. Figuring out what went wrong and what other dependencies need to be upgraded can be a time consuming task. Check &lt;a href=&#34;http://blogs.nature.com/naturejobs/2017/11/03/techblog-bioconda-promises-to-ease-bioinformatics-software-installation-woes/&#34; target=&#34;_blank&#34;&gt;this blog&lt;/a&gt; out to read more about this issue.&lt;/p&gt;
 
 &lt;p&gt;Today I was working with &lt;a href=&#34;http://networkx.github.io/&#34; target=&#34;_blank&#34;&gt;networkx API&lt;/a&gt; and wanted to draw &lt;a href=&#34;https://archive.nytimes.com/www.nytimes.com/imagepages/2007/01/22/science/20070123_SCI_ILLO.html&#34; target=&#34;_blank&#34;&gt;CircosPlot&lt;/a&gt; of a sample of GitHub user collaboration data . I had networkx, nxviz, matplotlib installed in my current shell environment so plotting should have been eventless.&lt;/p&gt;
 
@@ -53,7 +55,7 @@ AttributeError: &#39;Graph&#39; object has no attribute &#39;_node&#39;
 
 &lt;p&gt;Obvious solution to the problem here is to downgrade networkx package to version 1.11. But this may break other piece of code which works fine on this machine.&lt;/p&gt;
 
-&lt;p&gt;This is a perfect scenario for using virtual environment. A virtual environment is a named copy of python complete with its own environment variables, packages and dependencies which is isolated from other environments on the system. You can load this environment and install desired versions of the packages and their dependencies. The packages in other environment will remain installed but will not be used. You can create a virtual environment using &lt;code&gt;conda&lt;/code&gt; command. You need to be running the anaconda distribution of python.&lt;/p&gt;
+&lt;p&gt;This is a perfect scenario for using virtual environment. A virtual environment is a named copy of python complete with its own environment variables, packages and dependencies which is isolated from other environments on the system. You can load this environment and install desired versions of the packages and their dependencies. The packages in other environments will remain installed but will not be used. You can create a virtual environment using &lt;code&gt;conda&lt;/code&gt; command. You need to be running the anaconda distribution of python.&lt;/p&gt;
 
 &lt;h3 id=&#34;creating-a-new-virtual-environment&#34;&gt;Creating a new virtual environment&lt;/h3&gt;
 
@@ -75,9 +77,9 @@ $ pip uninstall nxviz
 $ pip install nxviz==0.3.1
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;At this point you can also check the versions of packages on which just downgraded package depended and update them accordingly.&lt;/p&gt;
+&lt;p&gt;At this point you can also check the versions of packages on which your just downgraded package depended, and update them accordingly.&lt;/p&gt;
 
-&lt;p&gt;The original installed versions of the programs are safe in other environment that can be loaded if you need them.&lt;/p&gt;
+&lt;p&gt;The original installed versions of the programs are safe in other environments that can be loaded if you need them.&lt;/p&gt;
 
 &lt;p&gt;To deactivate an active environment, do following&lt;/p&gt;
 

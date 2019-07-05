@@ -13,14 +13,12 @@
     
     
     <item>
-      <title>Creating New Environment With Anaconda</title>
-      <link>/post/creating-new-environment-with-anaconda/</link>
+      <title>Creating New Environment With Conda</title>
+      <link>/2019/06/24/creating-new-environment-with-conda/</link>
       <pubDate>Mon, 24 Jun 2019 20:05:49 +0530</pubDate>
       
-      <guid>/post/creating-new-environment-with-anaconda/</guid>
-      <description>Today I was working with networkx API and wanted to draw CircosPlot of a sample of GitHub user collaboration data . I had networkx, nxviz, matplotlib installed in my current shell environment so plotting should have been eventless.
-import networkx as nx import matplotlib.pyplot as plt import nxviz as nv G = nx.read_gpickle(&#39;github.p&#39;)  Before moving further I decided to check if everything was ok&amp;hellip;
-G.nodes()  --------------------------------------------------------------------------- AttributeError Traceback (most recent call last) &amp;lt;ipython-input-3-083f395b092f&amp;gt; in &amp;lt;module&amp;gt; ----&amp;gt; 1 G.</description>
+      <guid>/2019/06/24/creating-new-environment-with-conda/</guid>
+      <description>One of the frustrating things bioinformaticians encounter routinely is the incompatibities among packages and their dependencies when they upgrade a package. An update is recommended because it usually offers more efficient, elegant and secure functionalities to the users. However, this comes at a price. An update may break an existing workflow or pipelines installed on the system. Figuring out what went wrong and what other dependencies need to be upgraded can be a time consuming task.</description>
     </item>
     
   </channel>
