@@ -55,7 +55,7 @@ AttributeError: &#39;Graph&#39; object has no attribute &#39;_node&#39;
 
 &lt;p&gt;Obvious solution to the problem here is to downgrade networkx package to version 1.11. But this may break other piece of code which works fine on this machine.&lt;/p&gt;
 
-&lt;p&gt;This is a perfect scenario for using virtual environment. A virtual environment is a named copy of python complete with its own environment variables, packages and dependencies which is isolated from other environments on the system. You can load this environment and install desired versions of the packages and their dependencies. The packages in other environments will remain installed but will not be used. You can create a virtual environment using &lt;code&gt;conda&lt;/code&gt; command. You need to be running the anaconda distribution of python.&lt;/p&gt;
+&lt;p&gt;This is a perfect scenario for using virtual environment. A virtual environment is a named copy of python complete with its own environment variables, packages and dependencies which is isolated from other environments on the system. You can create a new environment and load it with desired versions of the packages and their dependencies. The packages in other environments will remain installed but will not be used. A new virtual environment is created using &lt;code&gt;conda&lt;/code&gt; command. You need to be running the anaconda distribution of python.&lt;/p&gt;
 
 &lt;h3 id=&#34;creating-a-new-virtual-environment&#34;&gt;Creating a new virtual environment&lt;/h3&gt;
 
