@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.3.1">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Narendra Kumar, PhD">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="&ldquo;A set is a gathering together into a whole of definite, distinct objects of our perception and of our thought - which are called elements of the set.&rdquo;
+Georg Cantor, German mathematician and founder of set theory
+ or in plain english
+&ldquo;A set is a well defined collection of objects&rdquo;
+A set in mathematics A null set
+Sets in python3 Set is a standard data type in python just like list and tuple.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/courses/python3/python_sets_page/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.0cd48f96ad435ffbb423884627ce0e3b.css">
+
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-141733107-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/courses/python3/python_sets_page/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Narendra Kumar">
+  <meta property="og:url" content="/courses/python3/python_sets_page/">
+  <meta property="og:title" content="Python sets | Narendra Kumar">
+  <meta property="og:description" content="&ldquo;A set is a gathering together into a whole of definite, distinct objects of our perception and of our thought - which are called elements of the set.&rdquo;
+Georg Cantor, German mathematician and founder of set theory
+ or in plain english
+&ldquo;A set is a well defined collection of objects&rdquo;
+A set in mathematics A null set
+Sets in python3 Set is a standard data type in python just like list and tuple."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2019-05-05T00:00:00&#43;01:00">
+  
+  <meta property="article:modified_time" content="2019-05-05T00:00:00&#43;01:00">
+  
+
+  
+
+  
+
+  <title>Python sets | Narendra Kumar</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Narendra Kumar</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects">
+            
+            <span>Projects</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#teaching">
+            
+            <span>Teaching</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/courses">
+            
+            <span>Courses</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" id="search-query" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/python3/">Overview</a>
+
+  </div>
+  
+  <div class="docs-toc-item active">
+    <a class="docs-toc-link" href="/courses/python3/python_sets_page/">Sets</a>
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+      <p class="docs-toc-title">On this page</p>
+      
+
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#a-set-in-mathematics">A set in mathematics</a></li>
+<li><a href="#sets-in-python3">Sets in python3</a></li>
+<li><a href="#advantages">Advantages</a></li>
+<li><a href="#set-initialisation">Set Initialisation</a>
+<ul>
+<li><a href="#create-an-empty-set">Create an empty set</a></li>
+<li><a href="#create-a-set-with-value">Create a set with value</a></li>
+</ul></li>
+<li><a href="#add-values-to-the-set">Add Values to the set</a>
+<ul>
+<li><a href="#add-method"><code>add</code> method</a></li>
+</ul></li>
+<li><a href="#remove-values-from-a-set">Remove Values from a set</a>
+<ul>
+<li><a href="#remove-method"><code>remove</code> method</a></li>
+<li><a href="#discard-method"><code>discard</code> method</a></li>
+<li><a href="#pop-method"><code>pop</code> method</a></li>
+</ul></li>
+<li><a href="#remove-all-values">Remove all values</a>
+<ul>
+<li><a href="#clear-method"><code>clear</code> method</a></li>
+</ul></li>
+<li><a href="#iterate-over-a-set">Iterate over a set</a></li>
+<li><a href="#sorting-a-set">Sorting a set</a></li>
+<li><a href="#remove-duplicates">Remove Duplicates</a></li>
+<li><a href="#set-operations">Set Operations</a>
+<ul>
+<li><a href="#the-union-method">The <code>union</code> method</a></li>
+<li><a href="#the-intersection-method">The <code>intersection</code> method</a></li>
+<li><a href="#isdisjoint"><code>isdisjoint</code></a></li>
+<li><a href="#difference-method"><code>difference</code> method</a></li>
+<li><a href="#the-symmetric-difference-method">The <code>symmetric_difference</code> method</a></li>
+</ul></li>
+<li><a href="#membership-tests-for-sets">Membership tests for sets</a>
+<ul>
+<li><a href="#in"><code>in</code></a></li>
+<li><a href="#issubset"><code>issubset</code></a></li>
+</ul></li>
+<li><a href="#the-copy-method">The <code>copy</code> method</a></li>
+<li><a href="#the-frozensets">The <code>Frozensets</code></a></li>
+</ul></li>
+</ul>
+</nav>
+
+      <ul class="nav toc-top">
+        <li><a href="#">Back to top</a></li>
+      </ul>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article" itemscope itemtype="http://schema.org/Article">
+
+        <div class="docs-article-container">
+          <h1 itemprop="name">Python sets</h1>
+
+          <div class="article-style" itemprop="articleBody">
+            
+
+<blockquote>
+<p>&ldquo;A set is a gathering together into a whole of definite, distinct objects of our perception and of our thought - which are called elements of the set.&rdquo;</p>
+
+<p>Georg Cantor, German mathematician and founder of set theory</p>
+</blockquote>
+
+<p>or in plain english</p>
+
+<p>&ldquo;A set is a well defined collection of objects&rdquo;</p>
+
+<hr />
+
+<h2 id="a-set-in-mathematics">A set in mathematics</h2>
+
+<p><img src="/slides/PLB/PythonSets/null_set.jpg" alt="null set" /></p>
+
+<p>A null set</p>
+
+<hr />
+
+<h2 id="sets-in-python3">Sets in python3</h2>
+
+<p><strong>Set</strong> is a standard data type in python just like <code>list</code> and <code>tuple</code>. However, it is different from <code>list</code> and <code>tuple</code> in the the following aspects:
+1. A set can NOT hold multiple occurrence of same element
+2. The elements in a set are UNORDERED
+3. All the elements in a set are IMMUTABLE</p>
+
+<hr />
+
+<h2 id="advantages">Advantages</h2>
+
+<ol>
+<li>Remove the multiple occurrence of elements from lists and tuples</li>
+<li>Perform mathematical operations such as intersection, union etc.</li>
+</ol>
+
+<hr />
+
+<h2 id="set-initialisation">Set Initialisation</h2>
+
+<hr />
+
+<h3 id="create-an-empty-set">Create an empty set</h3>
+
+<pre><code class="language-python">vacantSet = set()
+</code></pre>
+
+<hr />
+
+<h3 id="create-a-set-with-value">Create a set with value</h3>
+
+<p>Pass a <code>list of values</code> to <code>set</code></p>
+
+<pre><code class="language-python">hydrophobic_amino_acids = set([ 'Isoleucine', 'Leucine',
+'Alanine','Methionine', 'Phenylalanine',
+'Proline', 'Glycine' ])
+
+aromatic_amino_acids = set(['Phenylalanine', 'Tyrosine', 
+'Histidine', 'Tryptophan'])
+</code></pre>
+
+<hr />
+
+<pre><code class="language-python">hydrophobic_amino_acids
+</code></pre>
+
+<pre><code>{'Alanine',
+ 'Glycine',
+ 'Isoleucine',
+ 'Leucine',
+ 'Methionine',
+ 'Phenylalanine',
+ 'Proline',
+ 'Valine'}
+</code></pre>
+
+<pre><code class="language-python">aromatic_amino_acids
+</code></pre>
+
+<pre><code>{'Histidine', 'Phenylalanine', 'Tryptophan', 'Tyrosine'}
+</code></pre>
+
+<blockquote>
+<p>Notice the curly braces</p>
+</blockquote>
+
+<hr />
+
+<p>A set can also be initialized with curly braces <code>{}</code></p>
+
+<pre><code class="language-python">hydrophobic_amino_acids = { 'Isoleucine', 'Leucine',
+'Alanine','Methionine', 'Phenylalanine', 'Proline', 
+'Glycine' }
+
+aromatic_amino_acids = { 'Phenylalanine', 'Tyrosine', 
+'Histidine', 'Tryptophan' }
+</code></pre>
+
+<hr />
+
+<p>Curly braces can only be used to initialize a non empty set.</p>
+
+<pre><code class="language-python">vacantSet = set() # its a set
+
+vacantDict = {}  # see the difference
+</code></pre>
+
+<blockquote>
+<p>Second example creates an empty dictionary, NOT an empty set</p>
+</blockquote>
+
+<hr />
+
+<h2 id="add-values-to-the-set">Add Values to the set</h2>
+
+<hr />
+
+<h3 id="add-method"><code>add</code> method</h3>
+
+<p>Adds a new element to a set</p>
+
+<pre><code class="language-python">hydrophobic_amino_acids = { 'Isoleucine', 'Leucine',
+'Alanine','Methionine', 'Phenylalanine', 'Proline', 
+'Glycine' }
+
+hydrophobic_amino_acids.add('Valine')
+</code></pre>
+
+<pre><code class="language-python">hydrophobic_amino_acids
+</code></pre>
+
+<pre><code>{'Alanine','Glycine','Isoleucine',
+ 'Leucine','Methionine','Phenylalanine', 
+ 'Proline','Valine'}
+</code></pre>
+
+<p>Only an <em>immutable object</em> can be added to a set. E.g. a string or a tuple. You will get a <em>TypeError</em> if you try to add a list to a set.</p>
+
+<hr />
+
+<h2 id="remove-values-from-a-set">Remove Values from a set</h2>
+
+<hr />
+
+<h3 id="remove-method"><code>remove</code> method</h3>
+
+<p>Removes an element from a set</p>
+
+<pre><code class="language-python">hydrophobic_amino_acids = { 'Isoleucine', 'Leucine',
+'Alanine','Methionine', 'Phenylalanine', 'Proline', 
+'Glycine' }
+</code></pre>
+
+<pre><code class="language-python">hydrophobic_amino_acids.remove('Valine')
+</code></pre>
+
+<pre><code class="language-python">hydrophobic_amino_acids
+</code></pre>
+
+<pre><code>{'Alanine',
+ 'Glycine',
+ 'Isoleucine',
+ 'Leucine',
+ 'Methionine',
+ 'Phenylalanine',
+ 'Proline'}
+</code></pre>
+
+<hr />
+
+<blockquote>
+<p>Disadvantage of <code>remove</code>: you get a keyError if you try to remove a value that does not exist in the set</p>
+</blockquote>
+
+<pre><code class="language-python">hydrophobic_amino_acids.remove('Valine')
+</code></pre>
+
+<pre><code>---------------------------------------------------------------------------
+
+KeyError                                  Traceback (most recent call last)
+
+&lt;ipython-input-18-d91ad6f2736b&gt; in &lt;module&gt;
+----&gt; 1 hydrophobic_amino_acids.remove('Valine')
+
+
+KeyError: 'Valine'
+</code></pre>
+
+<hr />
+
+<h3 id="discard-method"><code>discard</code> method</h3>
+
+<p>Removes a specific element from a set if it exists. Does not raise an exception if it does not exist. Exits quitely.</p>
+
+<pre><code class="language-python">hydrophobic_amino_acids = { 'Isoleucine', 'Leucine',
+'Alanine','Methionine', 'Phenylalanine', 'Proline', 
+'Glycine' }
+</code></pre>
+
+<pre><code class="language-python">hydrophobic_amino_acids.discard('Glycine')
+</code></pre>
+
+<pre><code class="language-python">hydrophobic_amino_acids
+</code></pre>
+
+<pre><code>{'Alanine', 'Isoleucine', 'Leucine', 'Methionine', 
+ 'Phenylalanine', 'Proline'}
+</code></pre>
+
+<pre><code class="language-python">hydrophobic_amino_acids.discard('Glycine')
+</code></pre>
+
+<blockquote>
+<p>No error</p>
+</blockquote>
+
+<hr />
+
+<h3 id="pop-method"><code>pop</code> method</h3>
+
+<p>Returns an arbitrary value and removes it from the set</p>
+
+<pre><code class="language-python">hydrophobic_amino_acids = { 'Isoleucine','Alanine',
+'Phenylalanine', 'Proline' }
+</code></pre>
+
+<pre><code class="language-python">hydrophobic_amino_acids.pop()
+</code></pre>
+
+<p>&lsquo;Alanine&rsquo;</p>
+
+<pre><code class="language-python">hydrophobic_amino_acids
+</code></pre>
+
+<p>{&lsquo;Isoleucine&rsquo;, &lsquo;Phenylalanine&rsquo;, &lsquo;Proline&rsquo;}</p>
+
+<blockquote>
+<p>It also raises a keyError if you try to use pop on an empty set</p>
+</blockquote>
+
+<hr />
+
+<h2 id="remove-all-values">Remove all values</h2>
+
+<hr />
+
+<h3 id="clear-method"><code>clear</code> method</h3>
+
+<p>Empties a set</p>
+
+<pre><code class="language-python">aromatic_amino_acids = { 'Phenylalanine', 'Tyrosine', 
+                         'Histidine', 'Tryptophan' }
+</code></pre>
+
+<pre><code class="language-python">aromatic_amino_acids
+</code></pre>
+
+<p>{&lsquo;Histidine&rsquo;, &lsquo;Phenylalanine&rsquo;, &lsquo;Tryptophan&rsquo;, &lsquo;Tyrosine&rsquo;}</p>
+
+<pre><code class="language-python">aromatic_amino_acids.clear()
+</code></pre>
+
+<pre><code class="language-python">aromatic_amino_acids
+</code></pre>
+
+<p>set()</p>
+
+<hr />
+
+<h2 id="iterate-over-a-set">Iterate over a set</h2>
+
+<p>Just like other collections in python, a set can be iterated over</p>
+
+<pre><code class="language-python">aromatic_amino_acids = { 'Phenylalanine', 'Tyrosine', 
+                         'Histidine', 'Tryptophan' }
+</code></pre>
+
+<pre><code class="language-python">for residue in aromatic_amino_acids:
+    print (residue)
+</code></pre>
+
+<p>Tyrosine
+Tryptophan
+Histidine
+Phenylalanine</p>
+
+<blockquote>
+<p>Notice no order in the output</p>
+</blockquote>
+
+<hr />
+
+<h2 id="sorting-a-set">Sorting a set</h2>
+
+<p><code>sorted</code> can be used to sort the members of a set. The result is a list.</p>
+
+<pre><code class="language-python">aromatic_amino_acids = { 'Phenylalanine', 'Tyrosine', 
+                         'Histidine', 'Tryptophan' }
+</code></pre>
+
+<pre><code class="language-python">aromatic_amino_acids_sorted = sorted (aromatic_amino_acids
+                                     )
+</code></pre>
+
+<pre><code class="language-python">aromatic_amino_acids_sorted
+</code></pre>
+
+<p>[&lsquo;Histidine&rsquo;, &lsquo;Phenylalanine&rsquo;, &lsquo;Tryptophan&rsquo;, &lsquo;Tyrosine&rsquo;]</p>
+
+<blockquote>
+<p>The output is a list and not a set</p>
+</blockquote>
+
+<hr />
+
+<h2 id="remove-duplicates">Remove Duplicates</h2>
+
+<p>If you need to remove duplicates items from a list, passed it to a set.</p>
+
+<pre><code class="language-python">list_with_duplicates = ['Ala','Gly','Val','Trp','Ala']
+</code></pre>
+
+<pre><code class="language-python">list_with_duplicates
+</code></pre>
+
+<p>[&lsquo;Ala&rsquo;, &lsquo;Gly&rsquo;, &lsquo;Val&rsquo;, &lsquo;Trp&rsquo;, &lsquo;Ala&rsquo;]</p>
+
+<pre><code class="language-python">list_without_duplicates = set(list_with_duplicates)
+</code></pre>
+
+<pre><code class="language-python">list_without_duplicates
+</code></pre>
+
+<p>{&lsquo;Ala&rsquo;, &lsquo;Gly&rsquo;, &lsquo;Trp&rsquo;, &lsquo;Val&rsquo;}</p>
+
+<hr />
+
+<h2 id="set-operations">Set Operations</h2>
+
+<p>Python sets are very useful in computing mathematical operations such as union, intersection, difference and symmetrical difference.</p>
+
+<hr />
+
+<h3 id="the-union-method">The <code>union</code> method</h3>
+
+<pre><code class="language-python">hydrophobic_amino_acids={'Isoleucine','Leucine','Alanine',
+'Methionine','Phenylalanine','Proline','Glycine' }
+
+aromatic_amino_acids = { 'Phenylalanine', 'Tyrosine', 
+'Histidine', 'Tryptophan' }
+</code></pre>
+
+<pre><code class="language-python">hydrophobic_amino_acids.union(aromatic_amino_acids)
+</code></pre>
+
+<pre><code>{'Alanine',
+ 'Glycine',
+ 'Histidine',
+ 'Isoleucine',
+ 'Leucine',
+ 'Methionine',
+ 'Phenylalanine',
+ 'Proline',
+ 'Tryptophan',
+ 'Tyrosine'}
+</code></pre>
+
+<hr />
+
+<p><img src="/slides/PLB/PythonSets/union1.png" alt="set union" /></p>
+
+<hr />
+
+<p><img src="/slides/PLB/PythonSets/union2.png" alt="set union" /></p>
+
+<hr />
+
+<h3 id="the-intersection-method">The <code>intersection</code> method</h3>
+
+<p>Returns a set that contains members that are part of both the set</p>
+
+<pre><code class="language-python">hydrophobic_amino_acids = { 'Isoleucine','Leucine','Alanine',
+'Methionine', 'Phenylalanine', 'Proline', 'Glycine' }
+
+aromatic_amino_acids = { 'Phenylalanine', 'Tyrosine', 
+'Histidine', 'Tryptophan' }
+</code></pre>
+
+<pre><code class="language-python">hydrophobic_amino_acids.intersection(aromatic_amino_acids
+                                    )
+</code></pre>
+
+<p>{&lsquo;Phenylalanine&rsquo;}</p>
+
+<hr />
+
+<p><img src="/slides/PLB/PythonSets/union1.png" alt="set union" /></p>
+
+<hr />
+
+<p><img src="/slides/PLB/PythonSets/intersection.png" alt="intesection" /></p>
+
+<hr />
+
+<h3 id="isdisjoint"><code>isdisjoint</code></h3>
+
+<p>Checks if two sets have members in common</p>
+
+<pre><code class="language-python">hydrophobic_amino_acids.isdisjoint(aromatic_amino_acids)
+</code></pre>
+
+<p>False</p>
+
+<blockquote>
+<p><code>False</code> because &lsquo;phenylalanine&rsquo; is common member so they are not <code>disjoint</code></p>
+</blockquote>
+
+<hr />
+
+<h3 id="difference-method"><code>difference</code> method</h3>
+
+<p>A difference of two sets <code>A</code> and <code>B</code> is a set of all members of <code>A</code> that are not a part of set <code>B</code></p>
+
+<pre><code class="language-python">hydrophobic_amino_acids={'Isoleucine','Leucine','Alanine',
+'Methionine', 'Phenylalanine', 'Proline', 'Glycine' }
+
+aromatic_amino_acids = { 'Phenylalanine', 'Tyrosine',
+'Histidine', 'Tryptophan' }
+</code></pre>
+
+<pre><code class="language-python">hydrophobic_amino_acids.difference(aromatic_amino_acids)
+</code></pre>
+
+<p>{&lsquo;Alanine&rsquo;, &lsquo;Glycine&rsquo;, &lsquo;Isoleucine&rsquo;, &lsquo;Leucine&rsquo;, &lsquo;Methionine&rsquo;, &lsquo;Proline&rsquo;}</p>
+
+<hr />
+
+<p><img src="/slides/PLB/PythonSets/union1.png" alt="set union" /></p>
+
+<hr />
+
+<p><img src="/slides/PLB/PythonSets/difference.png" alt="difference" /></p>
+
+<hr />
+
+<h3 id="the-symmetric-difference-method">The <code>symmetric_difference</code> method</h3>
+
+<p>A symmetric difference of two sets <code>A</code> and <code>B</code> is a set whose members are a member of <code>A</code> or <code>B</code> but not both <code>A</code> and <code>B</code></p>
+
+<pre><code class="language-python">hydrophobic_amino_acids = { 'Isoleucine','Leucine',
+'Alanine','Methionine', 'Phenylalanine', 'Proline', 
+'Glycine' }
+
+aromatic_amino_acids = { 'Phenylalanine', 'Tyrosine', 
+'Histidine', 'Tryptophan' }
+</code></pre>
+
+<hr />
+
+<pre><code class="language-python">hydrophobic_amino_acids.symmetric_difference(
+                                  aromatic_amino_acids)
+</code></pre>
+
+<p>{&lsquo;Alanine&rsquo;,
+     &lsquo;Glycine&rsquo;,
+     &lsquo;Histidine&rsquo;,
+     &lsquo;Isoleucine&rsquo;,
+     &lsquo;Leucine&rsquo;,
+     &lsquo;Methionine&rsquo;,
+     &lsquo;Proline&rsquo;,
+     &lsquo;Tryptophan&rsquo;,
+     &lsquo;Tyrosine&rsquo;}</p>
+
+<blockquote>
+<p>Notice no &lsquo;Phenylalanine&rsquo; which is common to both sets <code>hydrophobic_amino_acids</code> and <code>aromatic_amino_acids</code></p>
+</blockquote>
+
+<hr />
+
+<p><img src="/slides/PLB/PythonSets/union1.png" alt="set union" /></p>
+
+<hr />
+
+<p><img src="/slides/PLB/PythonSets/symmetric_difference.png" alt="symmetric_difference" /></p>
+
+<hr />
+
+<h2 id="membership-tests-for-sets">Membership tests for sets</h2>
+
+<hr />
+
+<h3 id="in"><code>in</code></h3>
+
+<p>In the same way a membership test is done for <code>list</code> and <code>tuple</code>, <code>in</code> operator can be used to test the membership of an element to a set</p>
+
+<pre><code class="language-python">hydrophobic_amino_acids = { 'Isoleucine','Leucine',
+'Alanine','Methionine', 'Phenylalanine', 'Proline', 
+'Glycine' }
+</code></pre>
+
+<pre><code class="language-python">'Leucine' in hydrophobic_amino_acids
+</code></pre>
+
+<p>True</p>
+
+<hr />
+
+<h3 id="issubset"><code>issubset</code></h3>
+
+<p>If every member of set <code>A</code> is only a member of set <code>B</code>, then set <code>A</code> is said to be subset of set <code>B</code></p>
+
+<pre><code class="language-python">aromatic_amino_acids = { 'Phenylalanine', 'Tyrosine', 
+'Histidine', 'Tryptophan' }
+
+six_member_ring = {'Phenylalanine', 'Tyrosine'}
+</code></pre>
+
+<pre><code class="language-python">six_member_ring.issubset(aromatic_amino_acids)
+</code></pre>
+
+<p>True</p>
+
+<hr />
+
+<p><img src="/slides/PLB/PythonSets/subset.png" alt="subset" /></p>
+
+<hr />
+
+<p><img src="/slides/PLB/PythonSets/issubset.png" alt="issubset" /></p>
+
+<hr />
+
+<h2 id="the-copy-method">The <code>copy</code> method</h2>
+
+<p>Creates a returns a shallow copy of the set</p>
+
+<pre><code class="language-python">aromatic_amino_acids = { 'Phenylalanine', 'Tyrosine', 
+'Histidine', 'Tryptophan' }
+</code></pre>
+
+<pre><code class="language-python">copy_set = aromatic_amino_acids.copy()
+</code></pre>
+
+<pre><code class="language-python">aromatic_amino_acids.pop()
+</code></pre>
+
+<p>&lsquo;Tryptophan&rsquo;</p>
+
+<pre><code class="language-python">aromatic_amino_acids
+</code></pre>
+
+<p>{&lsquo;Histidine&rsquo;, &lsquo;Phenylalanine&rsquo;, &lsquo;Tyrosine&rsquo;}</p>
+
+<hr />
+
+<pre><code class="language-python">copy_set
+</code></pre>
+
+<pre><code>{'Histidine', 'Phenylalanine', 'Tryptophan', 'Tyrosine'}
+</code></pre>
+
+<blockquote>
+<p>aromatic_amino_acids has shrunken in size whereas its copy <code>copy</code> does not</p>
+</blockquote>
+
+<hr />
+
+<h2 id="the-frozensets">The <code>Frozensets</code></h2>
+
+<p>In python, we can have &ldquo;list of lists&rdquo; and &ldquo;tuple of tuple&rdquo;</p>
+
+<pre><code class="language-python">list_of_lists = [ [0,1], [2,3],[4,5] ]
+</code></pre>
+
+<pre><code class="language-python">list_of_lists
+</code></pre>
+
+<p>[ [0, 1], [2, 3], [4, 5] ]</p>
+
+<pre><code class="language-python">tuple_of_tuples = ((0,1),(2,3),(4,5))
+</code></pre>
+
+<pre><code class="language-python">tuple_of_tuples
+</code></pre>
+
+<p>( (0, 1), (2, 3), (4, 5) )</p>
+
+<hr />
+
+<p>But we can NOT have a set of sets</p>
+
+<pre><code class="language-python">set_of_sets = { {0,1},{2,3},{4,5}}
+</code></pre>
+
+<pre><code>---------------------------------------------------------------------------
+
+TypeError                                 Traceback (most recent call last)
+
+&lt;ipython-input-51-704e3c8c2290&gt; in &lt;module&gt;
+----&gt; 1 set_of_sets = { {0,1},{2,3},{4,5}}
+
+
+TypeError: unhashable type: 'set'
+</code></pre>
+
+<p>Its because sets can NOT have a mutable element, including set ifself</p>
+
+<p>This is a situation where <code>frozenset</code> could be used</p>
+
+<hr />
+
+<p><code>frozenset</code> is a immutable set</p>
+
+<pre><code class="language-python">immutable_set = frozenset()
+</code></pre>
+
+<pre><code class="language-python">immutable_set
+</code></pre>
+
+<p>frozenset()</p>
+
+<hr />
+
+<p>A set of sets can be created if its elements are of frozenset type, and hence immutable</p>
+
+<pre><code class="language-python">set_of_sets = set([frozenset(), frozenset()])
+</code></pre>
+
+<pre><code class="language-python">set_of_sets
+</code></pre>
+
+<p>{frozenset()}</p>
+
+<hr />
+
+<p>The End</p>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          Last updated on May 5, 2019
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    &copy; Narendra Kumar 2019 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/python.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/shell.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.15494b02d66be9b96bab2e305f69c460.js"></script>
+
+  </body>
+</html>
+
+

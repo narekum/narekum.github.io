@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Overview on Narendra Kumar</title>
+    <link>/courses/python3/</link>
+    <description>Recent content in Overview on Narendra Kumar</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Narendra Kumar {year} </copyright>
+    <lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/courses/python3/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python sets</title>
+      <link>/courses/python3/python_sets_page/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/courses/python3/python_sets_page/</guid>
+      <description>&amp;ldquo;A set is a gathering together into a whole of definite, distinct objects of our perception and of our thought - which are called elements of the set.&amp;rdquo;
+Georg Cantor, German mathematician and founder of set theory
+ or in plain english
+&amp;ldquo;A set is a well defined collection of objects&amp;rdquo;
+A set in mathematics A null set
+Sets in python3 Set is a standard data type in python just like list and tuple.</description>
+    </item>
+    
+  </channel>
+</rss>

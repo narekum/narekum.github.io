@@ -7,10 +7,719 @@
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Narendra Kumar {year} </copyright>
-    <lastBuildDate>Mon, 24 Jun 2019 20:05:49 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jul 2019 20:05:49 +0530</lastBuildDate>
     
 	    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python sets</title>
+      <link>/courses/python3/python_sets_page/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/courses/python3/python_sets_page/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;A set is a gathering together into a whole of definite, distinct objects of our perception and of our thought - which are called elements of the set.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Georg Cantor, German mathematician and founder of set theory&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;or in plain english&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;A set is a well defined collection of objects&amp;rdquo;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;a-set-in-mathematics&#34;&gt;A set in mathematics&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;/slides/PLB/PythonSets/null_set.jpg&#34; alt=&#34;null set&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A null set&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;sets-in-python3&#34;&gt;Sets in python3&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Set&lt;/strong&gt; is a standard data type in python just like &lt;code&gt;list&lt;/code&gt; and &lt;code&gt;tuple&lt;/code&gt;. However, it is different from &lt;code&gt;list&lt;/code&gt; and &lt;code&gt;tuple&lt;/code&gt; in the the following aspects:
+1. A set can NOT hold multiple occurrence of same element
+2. The elements in a set are UNORDERED
+3. All the elements in a set are IMMUTABLE&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;advantages&#34;&gt;Advantages&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Remove the multiple occurrence of elements from lists and tuples&lt;/li&gt;
+&lt;li&gt;Perform mathematical operations such as intersection, union etc.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;set-initialisation&#34;&gt;Set Initialisation&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;create-an-empty-set&#34;&gt;Create an empty set&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;vacantSet = set()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;create-a-set-with-value&#34;&gt;Create a set with value&lt;/h3&gt;
+
+&lt;p&gt;Pass a &lt;code&gt;list of values&lt;/code&gt; to &lt;code&gt;set&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;hydrophobic_amino_acids = set([ &#39;Isoleucine&#39;, &#39;Leucine&#39;,
+&#39;Alanine&#39;,&#39;Methionine&#39;, &#39;Phenylalanine&#39;,
+&#39;Proline&#39;, &#39;Glycine&#39; ])
+
+aromatic_amino_acids = set([&#39;Phenylalanine&#39;, &#39;Tyrosine&#39;, 
+&#39;Histidine&#39;, &#39;Tryptophan&#39;])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;hydrophobic_amino_acids
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;{&#39;Alanine&#39;,
+ &#39;Glycine&#39;,
+ &#39;Isoleucine&#39;,
+ &#39;Leucine&#39;,
+ &#39;Methionine&#39;,
+ &#39;Phenylalanine&#39;,
+ &#39;Proline&#39;,
+ &#39;Valine&#39;}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;aromatic_amino_acids
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;{&#39;Histidine&#39;, &#39;Phenylalanine&#39;, &#39;Tryptophan&#39;, &#39;Tyrosine&#39;}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Notice the curly braces&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;A set can also be initialized with curly braces &lt;code&gt;{}&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;hydrophobic_amino_acids = { &#39;Isoleucine&#39;, &#39;Leucine&#39;,
+&#39;Alanine&#39;,&#39;Methionine&#39;, &#39;Phenylalanine&#39;, &#39;Proline&#39;, 
+&#39;Glycine&#39; }
+
+aromatic_amino_acids = { &#39;Phenylalanine&#39;, &#39;Tyrosine&#39;, 
+&#39;Histidine&#39;, &#39;Tryptophan&#39; }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Curly braces can only be used to initialize a non empty set.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;vacantSet = set() # its a set
+
+vacantDict = {}  # see the difference
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Second example creates an empty dictionary, NOT an empty set&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;add-values-to-the-set&#34;&gt;Add Values to the set&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;add-method&#34;&gt;&lt;code&gt;add&lt;/code&gt; method&lt;/h3&gt;
+
+&lt;p&gt;Adds a new element to a set&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;hydrophobic_amino_acids = { &#39;Isoleucine&#39;, &#39;Leucine&#39;,
+&#39;Alanine&#39;,&#39;Methionine&#39;, &#39;Phenylalanine&#39;, &#39;Proline&#39;, 
+&#39;Glycine&#39; }
+
+hydrophobic_amino_acids.add(&#39;Valine&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;hydrophobic_amino_acids
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;{&#39;Alanine&#39;,&#39;Glycine&#39;,&#39;Isoleucine&#39;,
+ &#39;Leucine&#39;,&#39;Methionine&#39;,&#39;Phenylalanine&#39;, 
+ &#39;Proline&#39;,&#39;Valine&#39;}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Only an &lt;em&gt;immutable object&lt;/em&gt; can be added to a set. E.g. a string or a tuple. You will get a &lt;em&gt;TypeError&lt;/em&gt; if you try to add a list to a set.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;remove-values-from-a-set&#34;&gt;Remove Values from a set&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;remove-method&#34;&gt;&lt;code&gt;remove&lt;/code&gt; method&lt;/h3&gt;
+
+&lt;p&gt;Removes an element from a set&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;hydrophobic_amino_acids = { &#39;Isoleucine&#39;, &#39;Leucine&#39;,
+&#39;Alanine&#39;,&#39;Methionine&#39;, &#39;Phenylalanine&#39;, &#39;Proline&#39;, 
+&#39;Glycine&#39; }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;hydrophobic_amino_acids.remove(&#39;Valine&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;hydrophobic_amino_acids
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;{&#39;Alanine&#39;,
+ &#39;Glycine&#39;,
+ &#39;Isoleucine&#39;,
+ &#39;Leucine&#39;,
+ &#39;Methionine&#39;,
+ &#39;Phenylalanine&#39;,
+ &#39;Proline&#39;}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Disadvantage of &lt;code&gt;remove&lt;/code&gt;: you get a keyError if you try to remove a value that does not exist in the set&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;hydrophobic_amino_acids.remove(&#39;Valine&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;---------------------------------------------------------------------------
+
+KeyError                                  Traceback (most recent call last)
+
+&amp;lt;ipython-input-18-d91ad6f2736b&amp;gt; in &amp;lt;module&amp;gt;
+----&amp;gt; 1 hydrophobic_amino_acids.remove(&#39;Valine&#39;)
+
+
+KeyError: &#39;Valine&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;discard-method&#34;&gt;&lt;code&gt;discard&lt;/code&gt; method&lt;/h3&gt;
+
+&lt;p&gt;Removes a specific element from a set if it exists. Does not raise an exception if it does not exist. Exits quitely.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;hydrophobic_amino_acids = { &#39;Isoleucine&#39;, &#39;Leucine&#39;,
+&#39;Alanine&#39;,&#39;Methionine&#39;, &#39;Phenylalanine&#39;, &#39;Proline&#39;, 
+&#39;Glycine&#39; }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;hydrophobic_amino_acids.discard(&#39;Glycine&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;hydrophobic_amino_acids
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;{&#39;Alanine&#39;, &#39;Isoleucine&#39;, &#39;Leucine&#39;, &#39;Methionine&#39;, 
+ &#39;Phenylalanine&#39;, &#39;Proline&#39;}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;hydrophobic_amino_acids.discard(&#39;Glycine&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;No error&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;pop-method&#34;&gt;&lt;code&gt;pop&lt;/code&gt; method&lt;/h3&gt;
+
+&lt;p&gt;Returns an arbitrary value and removes it from the set&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;hydrophobic_amino_acids = { &#39;Isoleucine&#39;,&#39;Alanine&#39;,
+&#39;Phenylalanine&#39;, &#39;Proline&#39; }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;hydrophobic_amino_acids.pop()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&amp;lsquo;Alanine&amp;rsquo;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;hydrophobic_amino_acids
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;{&amp;lsquo;Isoleucine&amp;rsquo;, &amp;lsquo;Phenylalanine&amp;rsquo;, &amp;lsquo;Proline&amp;rsquo;}&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;It also raises a keyError if you try to use pop on an empty set&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;remove-all-values&#34;&gt;Remove all values&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;clear-method&#34;&gt;&lt;code&gt;clear&lt;/code&gt; method&lt;/h3&gt;
+
+&lt;p&gt;Empties a set&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;aromatic_amino_acids = { &#39;Phenylalanine&#39;, &#39;Tyrosine&#39;, 
+                         &#39;Histidine&#39;, &#39;Tryptophan&#39; }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;aromatic_amino_acids
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;{&amp;lsquo;Histidine&amp;rsquo;, &amp;lsquo;Phenylalanine&amp;rsquo;, &amp;lsquo;Tryptophan&amp;rsquo;, &amp;lsquo;Tyrosine&amp;rsquo;}&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;aromatic_amino_acids.clear()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;aromatic_amino_acids
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;set()&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;iterate-over-a-set&#34;&gt;Iterate over a set&lt;/h2&gt;
+
+&lt;p&gt;Just like other collections in python, a set can be iterated over&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;aromatic_amino_acids = { &#39;Phenylalanine&#39;, &#39;Tyrosine&#39;, 
+                         &#39;Histidine&#39;, &#39;Tryptophan&#39; }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;for residue in aromatic_amino_acids:
+    print (residue)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Tyrosine
+Tryptophan
+Histidine
+Phenylalanine&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Notice no order in the output&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;sorting-a-set&#34;&gt;Sorting a set&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;sorted&lt;/code&gt; can be used to sort the members of a set. The result is a list.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;aromatic_amino_acids = { &#39;Phenylalanine&#39;, &#39;Tyrosine&#39;, 
+                         &#39;Histidine&#39;, &#39;Tryptophan&#39; }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;aromatic_amino_acids_sorted = sorted (aromatic_amino_acids
+                                     )
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;aromatic_amino_acids_sorted
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;[&amp;lsquo;Histidine&amp;rsquo;, &amp;lsquo;Phenylalanine&amp;rsquo;, &amp;lsquo;Tryptophan&amp;rsquo;, &amp;lsquo;Tyrosine&amp;rsquo;]&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The output is a list and not a set&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;remove-duplicates&#34;&gt;Remove Duplicates&lt;/h2&gt;
+
+&lt;p&gt;If you need to remove duplicates items from a list, passed it to a set.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;list_with_duplicates = [&#39;Ala&#39;,&#39;Gly&#39;,&#39;Val&#39;,&#39;Trp&#39;,&#39;Ala&#39;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;list_with_duplicates
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;[&amp;lsquo;Ala&amp;rsquo;, &amp;lsquo;Gly&amp;rsquo;, &amp;lsquo;Val&amp;rsquo;, &amp;lsquo;Trp&amp;rsquo;, &amp;lsquo;Ala&amp;rsquo;]&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;list_without_duplicates = set(list_with_duplicates)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;list_without_duplicates
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;{&amp;lsquo;Ala&amp;rsquo;, &amp;lsquo;Gly&amp;rsquo;, &amp;lsquo;Trp&amp;rsquo;, &amp;lsquo;Val&amp;rsquo;}&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;set-operations&#34;&gt;Set Operations&lt;/h2&gt;
+
+&lt;p&gt;Python sets are very useful in computing mathematical operations such as union, intersection, difference and symmetrical difference.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;the-union-method&#34;&gt;The &lt;code&gt;union&lt;/code&gt; method&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;hydrophobic_amino_acids={&#39;Isoleucine&#39;,&#39;Leucine&#39;,&#39;Alanine&#39;,
+&#39;Methionine&#39;,&#39;Phenylalanine&#39;,&#39;Proline&#39;,&#39;Glycine&#39; }
+
+aromatic_amino_acids = { &#39;Phenylalanine&#39;, &#39;Tyrosine&#39;, 
+&#39;Histidine&#39;, &#39;Tryptophan&#39; }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;hydrophobic_amino_acids.union(aromatic_amino_acids)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;{&#39;Alanine&#39;,
+ &#39;Glycine&#39;,
+ &#39;Histidine&#39;,
+ &#39;Isoleucine&#39;,
+ &#39;Leucine&#39;,
+ &#39;Methionine&#39;,
+ &#39;Phenylalanine&#39;,
+ &#39;Proline&#39;,
+ &#39;Tryptophan&#39;,
+ &#39;Tyrosine&#39;}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&#34;/slides/PLB/PythonSets/union1.png&#34; alt=&#34;set union&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&#34;/slides/PLB/PythonSets/union2.png&#34; alt=&#34;set union&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;the-intersection-method&#34;&gt;The &lt;code&gt;intersection&lt;/code&gt; method&lt;/h3&gt;
+
+&lt;p&gt;Returns a set that contains members that are part of both the set&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;hydrophobic_amino_acids = { &#39;Isoleucine&#39;,&#39;Leucine&#39;,&#39;Alanine&#39;,
+&#39;Methionine&#39;, &#39;Phenylalanine&#39;, &#39;Proline&#39;, &#39;Glycine&#39; }
+
+aromatic_amino_acids = { &#39;Phenylalanine&#39;, &#39;Tyrosine&#39;, 
+&#39;Histidine&#39;, &#39;Tryptophan&#39; }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;hydrophobic_amino_acids.intersection(aromatic_amino_acids
+                                    )
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;{&amp;lsquo;Phenylalanine&amp;rsquo;}&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&#34;/slides/PLB/PythonSets/union1.png&#34; alt=&#34;set union&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&#34;/slides/PLB/PythonSets/intersection.png&#34; alt=&#34;intesection&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;isdisjoint&#34;&gt;&lt;code&gt;isdisjoint&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;Checks if two sets have members in common&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;hydrophobic_amino_acids.isdisjoint(aromatic_amino_acids)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;False&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;False&lt;/code&gt; because &amp;lsquo;phenylalanine&amp;rsquo; is common member so they are not &lt;code&gt;disjoint&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;difference-method&#34;&gt;&lt;code&gt;difference&lt;/code&gt; method&lt;/h3&gt;
+
+&lt;p&gt;A difference of two sets &lt;code&gt;A&lt;/code&gt; and &lt;code&gt;B&lt;/code&gt; is a set of all members of &lt;code&gt;A&lt;/code&gt; that are not a part of set &lt;code&gt;B&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;hydrophobic_amino_acids={&#39;Isoleucine&#39;,&#39;Leucine&#39;,&#39;Alanine&#39;,
+&#39;Methionine&#39;, &#39;Phenylalanine&#39;, &#39;Proline&#39;, &#39;Glycine&#39; }
+
+aromatic_amino_acids = { &#39;Phenylalanine&#39;, &#39;Tyrosine&#39;,
+&#39;Histidine&#39;, &#39;Tryptophan&#39; }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;hydrophobic_amino_acids.difference(aromatic_amino_acids)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;{&amp;lsquo;Alanine&amp;rsquo;, &amp;lsquo;Glycine&amp;rsquo;, &amp;lsquo;Isoleucine&amp;rsquo;, &amp;lsquo;Leucine&amp;rsquo;, &amp;lsquo;Methionine&amp;rsquo;, &amp;lsquo;Proline&amp;rsquo;}&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&#34;/slides/PLB/PythonSets/union1.png&#34; alt=&#34;set union&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&#34;/slides/PLB/PythonSets/difference.png&#34; alt=&#34;difference&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;the-symmetric-difference-method&#34;&gt;The &lt;code&gt;symmetric_difference&lt;/code&gt; method&lt;/h3&gt;
+
+&lt;p&gt;A symmetric difference of two sets &lt;code&gt;A&lt;/code&gt; and &lt;code&gt;B&lt;/code&gt; is a set whose members are a member of &lt;code&gt;A&lt;/code&gt; or &lt;code&gt;B&lt;/code&gt; but not both &lt;code&gt;A&lt;/code&gt; and &lt;code&gt;B&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;hydrophobic_amino_acids = { &#39;Isoleucine&#39;,&#39;Leucine&#39;,
+&#39;Alanine&#39;,&#39;Methionine&#39;, &#39;Phenylalanine&#39;, &#39;Proline&#39;, 
+&#39;Glycine&#39; }
+
+aromatic_amino_acids = { &#39;Phenylalanine&#39;, &#39;Tyrosine&#39;, 
+&#39;Histidine&#39;, &#39;Tryptophan&#39; }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;hydrophobic_amino_acids.symmetric_difference(
+                                  aromatic_amino_acids)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;{&amp;lsquo;Alanine&amp;rsquo;,
+     &amp;lsquo;Glycine&amp;rsquo;,
+     &amp;lsquo;Histidine&amp;rsquo;,
+     &amp;lsquo;Isoleucine&amp;rsquo;,
+     &amp;lsquo;Leucine&amp;rsquo;,
+     &amp;lsquo;Methionine&amp;rsquo;,
+     &amp;lsquo;Proline&amp;rsquo;,
+     &amp;lsquo;Tryptophan&amp;rsquo;,
+     &amp;lsquo;Tyrosine&amp;rsquo;}&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Notice no &amp;lsquo;Phenylalanine&amp;rsquo; which is common to both sets &lt;code&gt;hydrophobic_amino_acids&lt;/code&gt; and &lt;code&gt;aromatic_amino_acids&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&#34;/slides/PLB/PythonSets/union1.png&#34; alt=&#34;set union&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&#34;/slides/PLB/PythonSets/symmetric_difference.png&#34; alt=&#34;symmetric_difference&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;membership-tests-for-sets&#34;&gt;Membership tests for sets&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;in&#34;&gt;&lt;code&gt;in&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;In the same way a membership test is done for &lt;code&gt;list&lt;/code&gt; and &lt;code&gt;tuple&lt;/code&gt;, &lt;code&gt;in&lt;/code&gt; operator can be used to test the membership of an element to a set&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;hydrophobic_amino_acids = { &#39;Isoleucine&#39;,&#39;Leucine&#39;,
+&#39;Alanine&#39;,&#39;Methionine&#39;, &#39;Phenylalanine&#39;, &#39;Proline&#39;, 
+&#39;Glycine&#39; }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&#39;Leucine&#39; in hydrophobic_amino_acids
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;True&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;issubset&#34;&gt;&lt;code&gt;issubset&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;If every member of set &lt;code&gt;A&lt;/code&gt; is only a member of set &lt;code&gt;B&lt;/code&gt;, then set &lt;code&gt;A&lt;/code&gt; is said to be subset of set &lt;code&gt;B&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;aromatic_amino_acids = { &#39;Phenylalanine&#39;, &#39;Tyrosine&#39;, 
+&#39;Histidine&#39;, &#39;Tryptophan&#39; }
+
+six_member_ring = {&#39;Phenylalanine&#39;, &#39;Tyrosine&#39;}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;six_member_ring.issubset(aromatic_amino_acids)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;True&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&#34;/slides/PLB/PythonSets/subset.png&#34; alt=&#34;subset&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&#34;/slides/PLB/PythonSets/issubset.png&#34; alt=&#34;issubset&#34; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;the-copy-method&#34;&gt;The &lt;code&gt;copy&lt;/code&gt; method&lt;/h2&gt;
+
+&lt;p&gt;Creates a returns a shallow copy of the set&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;aromatic_amino_acids = { &#39;Phenylalanine&#39;, &#39;Tyrosine&#39;, 
+&#39;Histidine&#39;, &#39;Tryptophan&#39; }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;copy_set = aromatic_amino_acids.copy()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;aromatic_amino_acids.pop()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&amp;lsquo;Tryptophan&amp;rsquo;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;aromatic_amino_acids
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;{&amp;lsquo;Histidine&amp;rsquo;, &amp;lsquo;Phenylalanine&amp;rsquo;, &amp;lsquo;Tyrosine&amp;rsquo;}&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;copy_set
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;{&#39;Histidine&#39;, &#39;Phenylalanine&#39;, &#39;Tryptophan&#39;, &#39;Tyrosine&#39;}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;aromatic_amino_acids has shrunken in size whereas its copy &lt;code&gt;copy&lt;/code&gt; does not&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;the-frozensets&#34;&gt;The &lt;code&gt;Frozensets&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;In python, we can have &amp;ldquo;list of lists&amp;rdquo; and &amp;ldquo;tuple of tuple&amp;rdquo;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;list_of_lists = [ [0,1], [2,3],[4,5] ]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;list_of_lists
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;[ [0, 1], [2, 3], [4, 5] ]&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;tuple_of_tuples = ((0,1),(2,3),(4,5))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;tuple_of_tuples
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;( (0, 1), (2, 3), (4, 5) )&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;But we can NOT have a set of sets&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;set_of_sets = { {0,1},{2,3},{4,5}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;---------------------------------------------------------------------------
+
+TypeError                                 Traceback (most recent call last)
+
+&amp;lt;ipython-input-51-704e3c8c2290&amp;gt; in &amp;lt;module&amp;gt;
+----&amp;gt; 1 set_of_sets = { {0,1},{2,3},{4,5}}
+
+
+TypeError: unhashable type: &#39;set&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Its because sets can NOT have a mutable element, including set ifself&lt;/p&gt;
+
+&lt;p&gt;This is a situation where &lt;code&gt;frozenset&lt;/code&gt; could be used&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;code&gt;frozenset&lt;/code&gt; is a immutable set&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;immutable_set = frozenset()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;immutable_set
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;frozenset()&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;A set of sets can be created if its elements are of frozenset type, and hence immutable&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;set_of_sets = set([frozenset(), frozenset()])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;set_of_sets
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;{frozenset()}&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;The End&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Visualizing NIRF scores of Indian Academic Institutions</title>
+      <link>/2019/07/13/visualizing-nirf-scores-of-indian-academic-institutions/</link>
+      <pubDate>Sat, 13 Jul 2019 20:05:49 +0530</pubDate>
+      
+      <guid>/2019/07/13/visualizing-nirf-scores-of-indian-academic-institutions/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://tableau.com&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Tableau&lt;/strong&gt;&lt;/a&gt; is a great tool for data visualisation in an aesthetically pleasing way. It lets you easily create appealing visual representations of your data. What sets it apart from other popular data visualisation tools such as Microsoft Excel is its ability to create interactive charts and representations. You can build filters and buttons such that they can modify the display when selected. You let the user play with the data that could be engaging and fun. Tableau also provides a really easy way to organise graphics elements sitting in different sheets, onto a &lt;em&gt;dashboard&lt;/em&gt;, which helps you creatively tell your narrative for the data. You can also arrange multiple dashboards into a &lt;em&gt;story&lt;/em&gt; where each section tells different aspects of the story much like the chapters in a book. As if its not enough it also lets you publish your dashboard or story on its public server and allows you to embed it in your personal websites and blogs. The professional version of Tableau comes with a paid subscription but if you want to try it out, there is also a free version &lt;a href=&#34;https://public.tableau.com/en-us/s/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Tableau Public&lt;/strong&gt;&lt;/a&gt;. The free public version comes with a few minor restrictions such as it lets you save your work only on the Tableau Public Server and not on the local hard disk. There is a whole community of vibrant bloggers out there sharing their works with the world.&lt;/p&gt;
+
+&lt;p&gt;Here I build a Tableau dashboard to visualise the ranks and scores of top 100 institutions of higher education in India for the years of 2018 and 2019. These ranks are given by the Ministry of Human Resources Development, Government of India according to a ranking framework named &lt;a href=&#34;https://www.nirfindia.org/Documents&#34; target=&#34;_blank&#34;&gt;National Institutional Ranking Framework&lt;/a&gt; (NIRF) established specifically for this purpose. NIRF ranks institutes in a disciple-specific manner providing a list each for &lt;em&gt;Universities&lt;/em&gt;, &lt;em&gt;Engineering Institutes&lt;/em&gt;, &lt;em&gt;Colleges&lt;/em&gt;, &lt;em&gt;Management Institutes&lt;/em&gt;, &lt;em&gt;Medical Institutes&lt;/em&gt;, &lt;em&gt;Pharmaceutical Institutes&lt;/em&gt;, &lt;em&gt;Law Institutes&lt;/em&gt;, and &lt;em&gt;Architecture Institutes&lt;/em&gt;. It also provides a separate list in &lt;em&gt;Overall Category&lt;/em&gt;. NIRF scores every institute for the following five &lt;a href=&#34;https://www.nirfindia.org/Parameter&#34; target=&#34;_blank&#34;&gt;parameters&lt;/a&gt;:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;S. No.&lt;/th&gt;
+&lt;th&gt;Abbreviation&lt;/th&gt;
+&lt;th&gt;Parameter&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;TLR&lt;/td&gt;
+&lt;td&gt;Teaching, Learning &amp;amp; Resources&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;RPC&lt;/td&gt;
+&lt;td&gt;Research and Professional Practice&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;GO&lt;/td&gt;
+&lt;td&gt;Graduation Outcomes&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;OI&lt;/td&gt;
+&lt;td&gt;Outreach and Inclusivity&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;Perception&lt;/td&gt;
+&lt;td&gt;Perception&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Although NIRF website provides the ranks and scores for institutions in different disciplines, and for different parameters, these scores are static and non interactive. I downloaded the ranking pages in html for 2018 and 2019 and extracted the data using a perl script. The data is visualised in Tableau dashboard embedded on this page. Select the institute and the year from the pull down menu and check the scores of the that institute for various ranking parameters. You can also see how these parameters change as the ranks are arranged sequentially.&lt;/p&gt;
+
+&lt;p&gt;See the Dashboard on tableau public &lt;a href=&#34;https://public.tableau.com/profile/narendra.kumar6313#!/vizhome/NIRF_rankings_overall/version3&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Please write to me if you need a copy of ranking data file.&lt;/p&gt;
+
+&lt;iframe src=&#34;https://public.tableau.com/views/NIRF_rankings_overall/version3?:retry=yes&amp;:embed=y&amp;:display_count=yes&amp;:toolbar=no&amp;:origin=viz_share_link&amp;:showVizHome=no&#34; width=&#34;800&#34; height=&#34;800&#34; frameborder=&#39;0&#39; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+</description>
+    </item>
     
     <item>
       <title>Creating New Environment With Conda</title>

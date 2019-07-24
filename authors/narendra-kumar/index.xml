@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Narendra Kumar {year} </copyright>
-    <lastBuildDate>Mon, 01 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jul 2019 20:05:49 +0530</lastBuildDate>
     
 	<atom:link href="/authors/narendra-kumar/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Visualizing NIRF scores of Indian Academic Institutions</title>
+      <link>/2019/07/13/visualizing-nirf-scores-of-indian-academic-institutions/</link>
+      <pubDate>Sat, 13 Jul 2019 20:05:49 +0530</pubDate>
+      
+      <guid>/2019/07/13/visualizing-nirf-scores-of-indian-academic-institutions/</guid>
+      <description>Tableau is a great tool for data visualisation in an aesthetically pleasing way. It lets you easily create appealing visual representations of your data. What sets it apart from other popular data visualisation tools such as Microsoft Excel is its ability to create interactive charts and representations. You can build filters and buttons such that they can modify the display when selected. You let the user play with the data that could be engaging and fun.</description>
+    </item>
+    
+    <item>
+      <title>Creating New Environment With Conda</title>
+      <link>/2019/06/24/creating-new-environment-with-conda/</link>
+      <pubDate>Mon, 24 Jun 2019 20:05:49 +0530</pubDate>
+      
+      <guid>/2019/06/24/creating-new-environment-with-conda/</guid>
+      <description>One of the frustrating things bioinformaticians encounter routinely is the incompatibities among packages and their dependencies when they upgrade a package. An update is recommended because it usually offers more efficient, elegant and secure functionalities to the users. However, this comes at a price. An update may break an existing workflow or pipelines installed on the system. Figuring out what went wrong and what other dependencies need to be upgraded can be a time consuming task.</description>
+    </item>
     
     <item>
       <title>Improved catalytic properties of a serine hydroxymethyl transferase from Idiomarina loihiensis by site directed mutagenesis</title>
