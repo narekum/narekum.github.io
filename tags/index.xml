@@ -7,10 +7,55 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Narendra Kumar {year} </copyright>
-    <lastBuildDate>Sat, 13 Jul 2019 20:05:49 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 02 Sep 2019 13:05:49 +0530</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Curvy Timeline</title>
+      <link>/tags/curvy-timeline/</link>
+      <pubDate>Mon, 02 Sep 2019 13:05:49 +0530</pubDate>
+      
+      <guid>/tags/curvy-timeline/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Indian Nobel Laureates</title>
+      <link>/tags/indian-nobel-laureates/</link>
+      <pubDate>Mon, 02 Sep 2019 13:05:49 +0530</pubDate>
+      
+      <guid>/tags/indian-nobel-laureates/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nobel Prize</title>
+      <link>/tags/nobel-prize/</link>
+      <pubDate>Mon, 02 Sep 2019 13:05:49 +0530</pubDate>
+      
+      <guid>/tags/nobel-prize/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tableau Desktop</title>
+      <link>/tags/tableau-desktop/</link>
+      <pubDate>Mon, 02 Sep 2019 13:05:49 +0530</pubDate>
+      
+      <guid>/tags/tableau-desktop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tableau Public</title>
+      <link>/tags/tableau-public/</link>
+      <pubDate>Mon, 02 Sep 2019 13:05:49 +0530</pubDate>
+      
+      <guid>/tags/tableau-public/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Data Visualization</title>
@@ -27,24 +72,6 @@
       <pubDate>Sat, 13 Jul 2019 20:05:49 +0530</pubDate>
       
       <guid>/tags/nirf-rankings/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tableau Desktop</title>
-      <link>/tags/tableau-desktop/</link>
-      <pubDate>Sat, 13 Jul 2019 20:05:49 +0530</pubDate>
-      
-      <guid>/tags/tableau-desktop/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tableau Public</title>
-      <link>/tags/tableau-public/</link>
-      <pubDate>Sat, 13 Jul 2019 20:05:49 +0530</pubDate>
-      
-      <guid>/tags/tableau-public/</guid>
       <description></description>
     </item>
     

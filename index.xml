@@ -7,7 +7,7 @@
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Narendra Kumar {year} </copyright>
-    <lastBuildDate>Sat, 13 Jul 2019 20:05:49 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 02 Sep 2019 13:05:49 +0530</lastBuildDate>
     
 	    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
@@ -660,6 +660,16 @@ TypeError: unhashable type: &#39;set&#39;
     </item>
     
     <item>
+      <title>Indian Nobel Prize Winners, 1900 - 2019</title>
+      <link>/2019/09/02/indian-nobel-prize-winners-1900-2019/</link>
+      <pubDate>Mon, 02 Sep 2019 13:05:49 +0530</pubDate>
+      
+      <guid>/2019/09/02/indian-nobel-prize-winners-1900-2019/</guid>
+      <description>&lt;iframe src=&#34;https://public.tableau.com/views/CurvedTimeline_15671021483680/IndianNobelLaureates?:retry=yes&amp;:embed=y&amp;:display_count=yes&amp;:origin=viz_share_link&amp;:showVizHome=no&#34; width=&#34;800&#34; height=&#34;1200&#34; frameborder=&#39;0&#39; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Visualizing NIRF scores of Indian Academic Institutions</title>
       <link>/2019/07/13/visualizing-nirf-scores-of-indian-academic-institutions/</link>
       <pubDate>Sat, 13 Jul 2019 20:05:49 +0530</pubDate>
@@ -717,7 +727,7 @@ TypeError: unhashable type: &#39;set&#39;
 
 &lt;p&gt;Please write to me if you need a copy of ranking data file.&lt;/p&gt;
 
-&lt;iframe src=&#34;https://public.tableau.com/views/NIRF_rankings_overall/version3?:retry=yes&amp;:embed=y&amp;:display_count=yes&amp;:toolbar=no&amp;:origin=viz_share_link&amp;:showVizHome=no&#34; width=&#34;800&#34; height=&#34;800&#34; frameborder=&#39;0&#39; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;iframe src=&#34;https://public.tableau.com/views/NIRF_rankings_overall/NIRFrankings?:retry=yes&amp;:embed=y&amp;:display_count=yes&amp;:toolbar=no&amp;:origin=viz_share_link&amp;:showVizHome=no&#34; width=&#34;800&#34; height=&#34;800&#34; frameborder=&#39;0&#39; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
 </description>
     </item>
     
