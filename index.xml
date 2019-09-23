@@ -723,7 +723,7 @@ TypeError: unhashable type: &#39;set&#39;
 
 &lt;p&gt;Although NIRF website provides the ranks and scores for institutions in different disciplines, and for different parameters, these scores are static and non interactive. I downloaded the ranking pages in html for 2018 and 2019 and extracted the data using a perl script. The data is visualised in Tableau dashboard embedded on this page. Select the institute and the year from the pull down menu and check the scores of the that institute for various ranking parameters. You can also see how these parameters change as the ranks are arranged sequentially.&lt;/p&gt;
 
-&lt;p&gt;See the Dashboard on tableau public &lt;a href=&#34;https://public.tableau.com/profile/narendra.kumar6313#!/vizhome/NIRF_rankings_overall/version3&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;See the Dashboard on tableau public &lt;a href=&#34;https://public.tableau.com/profile/narendra.kumar6313#!/vizhome/NIRF_rankings_overall/NIRFrankings&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Please write to me if you need a copy of ranking data file.&lt;/p&gt;
 
