@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Overview on Narendra Kumar</title>
@@ -13,6 +13,18 @@
     
     
     <item>
+      <title>Python Paths</title>
+      <link>/courses/python3/python_paths/</link>
+      <pubDate>Fri, 21 Feb 2020 00:00:00 +0100</pubDate>
+      
+      <guid>/courses/python3/python_paths/</guid>
+      <description>Python searches for the modules and packages in the predefined directories on the operating system. It creates a list of those places and keeps them in a list.
+import sys sys.path for i in sys.path: print (i) Output
+/Users/naren/Documents/courses/Programming_languages_for_bioinformatics/python_paths /Users/naren/opt/anaconda3/lib/python37.zip /Users/naren/opt/anaconda3/lib/python3.7 /Users/naren/opt/anaconda3/lib/python3.7/lib-dynload /Users/naren/opt/anaconda3/lib/python3.7/site-packages /Users/naren/opt/anaconda3/lib/python3.7/site-packages/aeosa /Users/naren/opt/anaconda3/lib/python3.7/site-packages/IPython/extensions /Users/naren/.ipython  sys.path is simply a list which could be modified in the usuall way a list is modified (e.g. sys.path.append(), sys.path.extend())
+ PYTHONPATH PYTHONPATH is an environment variable that could be set before runing python script.</description>
+    </item>
+    
+    <item>
       <title>Python sets</title>
       <link>/courses/python3/python_sets_page/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
@@ -22,8 +34,8 @@
 Georg Cantor, German mathematician and founder of set theory
  or in plain english
 &amp;ldquo;A set is a well defined collection of objects&amp;rdquo;
-A set in mathematics A null set
-Sets in python3 Set is a standard data type in python just like list and tuple.</description>
+ A set in mathematics A null set
+ Sets in python3 Set is a standard data type in python just like list and tuple.</description>
     </item>
     
   </channel>

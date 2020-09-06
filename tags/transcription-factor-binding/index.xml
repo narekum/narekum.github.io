@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Transcription factor binding on Narendra Kumar</title>
@@ -22,21 +22,21 @@
     </item>
     
     <item>
-      <title>RNAseq-Pipeline</title>
-      <link>/project/rnaseqpipeline/</link>
-      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/project/rnaseqpipeline/</guid>
-      <description>RNA-seq paired end read alignment and processing pipeline</description>
-    </item>
-    
-    <item>
       <title>locStack</title>
       <link>/project/locstack/</link>
       <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>/project/locstack/</guid>
       <description>Meta-analysis of genomic features</description>
+    </item>
+    
+    <item>
+      <title>RNAseq-Pipeline</title>
+      <link>/project/rnaseqpipeline/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/project/rnaseqpipeline/</guid>
+      <description>RNA-seq paired end read alignment and processing pipeline</description>
     </item>
     
     <item>

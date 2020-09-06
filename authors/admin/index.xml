@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Narendra Kumar</title>
@@ -10,15 +10,6 @@
     
 	<atom:link href="/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title></title>
-      <link>/authors/admin/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/authors/admin/</guid>
-      <description>Narendra is an assistant professor at Jaypee University of Information Technology, Waknaghat, India. He specializes in computational biology and bioinformatics, and teaches undergrad and masters level degree courses. His research work focuses on discerning genome organization and its role in gene expression regulation. He takes data centric approach and uses high throughput “omics data” from public sources to understand biological processes. Narendra leverages his previous work in modelling intermolecular interactions to identifying targets and roles of important molecular players in genomes.</description>
-    </item>
     
   </channel>
 </rss>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Narendra Kumar</title>
@@ -85,24 +85,6 @@
     </item>
     
     <item>
-      <title>Python</title>
-      <link>/tags/python/</link>
-      <pubDate>Mon, 24 Jun 2019 20:05:49 +0530</pubDate>
-      
-      <guid>/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python Environments</title>
-      <link>/tags/python-environments/</link>
-      <pubDate>Mon, 24 Jun 2019 20:05:49 +0530</pubDate>
-      
-      <guid>/tags/python-environments/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>conda</title>
       <link>/tags/conda/</link>
       <pubDate>Mon, 24 Jun 2019 20:05:49 +0530</pubDate>
@@ -117,6 +99,24 @@
       <pubDate>Mon, 24 Jun 2019 20:05:49 +0530</pubDate>
       
       <guid>/tags/networkx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>/tags/python/</link>
+      <pubDate>Mon, 24 Jun 2019 20:05:49 +0530</pubDate>
+      
+      <guid>/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python Environments</title>
+      <link>/tags/python-environments/</link>
+      <pubDate>Mon, 24 Jun 2019 20:05:49 +0530</pubDate>
+      
+      <guid>/tags/python-environments/</guid>
       <description></description>
     </item>
     
@@ -175,15 +175,6 @@
     </item>
     
     <item>
-      <title>DNA-protein interaction</title>
-      <link>/tags/dna-protein-interaction/</link>
-      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/dna-protein-interaction/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Data Analysis</title>
       <link>/tags/data-analysis/</link>
       <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
@@ -202,11 +193,11 @@
     </item>
     
     <item>
-      <title>Enzyme Substrate Prediction</title>
-      <link>/tags/enzyme-substrate-prediction/</link>
+      <title>DNA-protein interaction</title>
+      <link>/tags/dna-protein-interaction/</link>
       <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/enzyme-substrate-prediction/</guid>
+      <guid>/tags/dna-protein-interaction/</guid>
       <description></description>
     </item>
     
@@ -216,6 +207,15 @@
       <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/enzyme-function-prediction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Enzyme Substrate Prediction</title>
+      <link>/tags/enzyme-substrate-prediction/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/enzyme-substrate-prediction/</guid>
       <description></description>
     </item>
     
@@ -355,15 +355,6 @@
     </item>
     
     <item>
-      <title>NRPS</title>
-      <link>/tags/nrps/</link>
-      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/nrps/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>National Instt of Immunology</title>
       <link>/tags/national-instt-of-immunology/</link>
       <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
@@ -382,11 +373,11 @@
     </item>
     
     <item>
-      <title>PKS</title>
-      <link>/tags/pks/</link>
+      <title>NRPS</title>
+      <link>/tags/nrps/</link>
       <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/pks/</guid>
+      <guid>/tags/nrps/</guid>
       <description></description>
     </item>
     
@@ -396,6 +387,15 @@
       <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/paired-end-reads/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PKS</title>
+      <link>/tags/pks/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/pks/</guid>
       <description></description>
     </item>
     

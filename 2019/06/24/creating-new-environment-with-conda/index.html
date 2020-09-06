@@ -81,7 +81,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/academic.min.0cd48f96ad435ffbb423884627ce0e3b.css">
+  <link rel="stylesheet" href="/css/academic.min.f896c607e75d7f5fa19b2454183e57cc.css">
 
   
 
@@ -431,7 +431,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/files/Narendra_cv_2019_08_18.pdf">
+          <a class="nav-link " href="/files/Narendra_cv_2020_09_06.pdf">
             
             <span>CV</span>
             
@@ -766,25 +766,16 @@
   <div class="article-container">
 
     <div class="article-style" itemprop="articleBody">
-      
+      <p>One of the frustrating things bioinformaticians encounter routinely is the incompatibities among packages and their dependencies when they upgrade a package. An update is recommended because it usually offers more efficient, elegant and secure functionalities to the users. However, this comes at a price. An update may break an existing workflow or pipelines installed on the system. Figuring out what went wrong and what other dependencies need to be upgraded can be a time consuming task. Check <a href="http://blogs.nature.com/naturejobs/2017/11/03/techblog-bioconda-promises-to-ease-bioinformatics-software-installation-woes/">this blog</a> out to read more about this issue.</p>
+<p>Today I was working with <a href="http://networkx.github.io/">networkx API</a> and wanted to draw <a href="https://archive.nytimes.com/www.nytimes.com/imagepages/2007/01/22/science/20070123_SCI_ILLO.html">CircosPlot</a> of a sample of GitHub user collaboration data . I had networkx, nxviz, matplotlib installed in my current shell environment so plotting should have been eventless.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> networkx <span style="color:#f92672">as</span> nx
+<span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#f92672">as</span> plt
+<span style="color:#f92672">import</span> nxviz <span style="color:#f92672">as</span> nv
 
-<p>One of the frustrating things bioinformaticians encounter routinely is the incompatibities among packages and their dependencies when they upgrade a package. An update is recommended because it usually offers more efficient, elegant and secure functionalities to the users. However, this comes at a price. An update may break an existing workflow or pipelines installed on the system. Figuring out what went wrong and what other dependencies need to be upgraded can be a time consuming task. Check <a href="http://blogs.nature.com/naturejobs/2017/11/03/techblog-bioconda-promises-to-ease-bioinformatics-software-installation-woes/" target="_blank">this blog</a> out to read more about this issue.</p>
-
-<p>Today I was working with <a href="http://networkx.github.io/" target="_blank">networkx API</a> and wanted to draw <a href="https://archive.nytimes.com/www.nytimes.com/imagepages/2007/01/22/science/20070123_SCI_ILLO.html" target="_blank">CircosPlot</a> of a sample of GitHub user collaboration data . I had networkx, nxviz, matplotlib installed in my current shell environment so plotting should have been eventless.</p>
-
-<pre><code class="language-python">import networkx as nx
-import matplotlib.pyplot as plt
-import nxviz as nv
-
-G = nx.read_gpickle('github.p')
-</code></pre>
-
-<p>Before moving further I decided to check if everything was ok&hellip;</p>
-
-<pre><code class="language-python">G.nodes()
-</code></pre>
-
-<pre><code>---------------------------------------------------------------------------
+G <span style="color:#f92672">=</span> nx<span style="color:#f92672">.</span>read_gpickle(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">github.p</span><span style="color:#e6db74">&#39;</span>)
+</code></pre></div><p>Before moving further I decided to check if everything was ok&hellip;</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">G<span style="color:#f92672">.</span>nodes()
+</code></pre></div><pre><code>---------------------------------------------------------------------------
 AttributeError                            Traceback (most recent call last)
 &lt;ipython-input-3-083f395b092f&gt; in &lt;module&gt;
 ----&gt; 1 G.nodes()
@@ -792,69 +783,41 @@ AttributeError                            Traceback (most recent call last)
 .
 .
 AttributeError: 'Graph' object has no attribute '_node'
-</code></pre>
-
-<p>The problem here is the pickle file <code>github.p</code> which was created using networkx version 1.11 while I had version 2.2 installed.</p>
-
+</code></pre><p>The problem here is the pickle file <code>github.p</code> which was created using networkx version 1.11 while I had version 2.2 installed.</p>
 <p>Checking the list of installed packages and their versions</p>
-
-<pre><code class="language-shell">pip list
-</code></pre>
-
-<p>Obvious solution to the problem here is to downgrade networkx package to version 1.11. But this may break other piece of code which works fine on this machine.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">pip list
+</code></pre></div><p>Obvious solution to the problem here is to downgrade networkx package to version 1.11. But this may break other piece of code which works fine on this machine.</p>
 <p>This is a perfect scenario for using virtual environment. A virtual environment is a named copy of python complete with its own environment variables, packages and dependencies which is isolated from other environments on the system. You can create a new environment and load it with desired versions of the packages and their dependencies. The packages in other environments will remain installed but will not be used. A new virtual environment is created using <code>conda</code> command. You need to be running the anaconda distribution of python.</p>
-
 <h3 id="creating-a-new-virtual-environment">Creating a new virtual environment</h3>
-
-<pre><code class="language-shell">$ conda create -n networkx_downgrade python=3.7 anaconda
-</code></pre>
-
-<p>This creates a new conda environment with a name &lsquo;networkx_downgrade&rsquo;.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ conda create -n networkx_downgrade python<span style="color:#f92672">=</span>3.7 anaconda
+</code></pre></div><p>This creates a new conda environment with a name &lsquo;networkx_downgrade&rsquo;.</p>
 <h3 id="loading-the-new-environments">Loading the new environments</h3>
-
-<pre><code class="language-shell">$ conda activate networkx_downgrade
-</code></pre>
-
-<p>This will load the newly created virtual environment. Now you can uninstall and install the desired versions of packages and their dependencies</p>
-
-<pre><code class="language-shell">$ pip uninstall networkx
-$ pip install networkx==1.11
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ conda activate networkx_downgrade
+</code></pre></div><p>This will load the newly created virtual environment. Now you can uninstall and install the desired versions of packages and their dependencies</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ pip uninstall networkx
+$ pip install networkx<span style="color:#f92672">=</span><span style="color:#f92672">=</span>1.11
 $ pip uninstall nxviz
-$ pip install nxviz==0.3.1
-</code></pre>
-
-<p>At this point you can also check the versions of packages on which your just downgraded package depended, and update them accordingly.</p>
-
+$ pip install nxviz<span style="color:#f92672">=</span><span style="color:#f92672">=</span>0.3.1
+</code></pre></div><p>At this point you can also check the versions of packages on which your just downgraded package depended, and update them accordingly.</p>
 <p>The original installed versions of the programs are safe in other environments that can be loaded if you need them.</p>
-
 <p>To deactivate an active environment, do following</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ conda deactivate
+</code></pre></div><p>Checking if my problem is solved</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> networkx <span style="color:#f92672">as</span> nx
+<span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#f92672">as</span> plt
+<span style="color:#f92672">import</span> nxviz <span style="color:#f92672">as</span> nv
 
-<pre><code class="language-shell">$ conda deactivate
-</code></pre>
+G <span style="color:#f92672">=</span> nx<span style="color:#f92672">.</span>read_gpickle(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">github.p</span><span style="color:#e6db74">&#39;</span>)
 
-<p>Checking if my problem is solved</p>
-
-<pre><code class="language-python">import networkx as nx
-import matplotlib.pyplot as plt
-import nxviz as nv
-
-G = nx.read_gpickle('github.p')
-
-G.nodes()
-</code></pre>
-
-<pre><code>['u10002',
+G<span style="color:#f92672">.</span>nodes()
+</code></pre></div><pre><code>['u10002',
  'u21097',
  'u24070',
  'u31908',
  .
  .
  .
-</code></pre>
-
-<p>Perfect!</p>
+</code></pre><p>Perfect!</p>
 
     </div>
 
@@ -929,7 +892,7 @@ G.nodes()
   
 
   <p class="powered-by">
-    &copy; Narendra Kumar 2019 &middot; 
+    © Narendra Kumar 2020 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
@@ -1077,7 +1040,7 @@ G.nodes()
     
     
     
-    <script src="/js/academic.min.15494b02d66be9b96bab2e305f69c460.js"></script>
+    <script src="/js/academic.min.8f3d53582b3c04a038fca31bcc86151b.js"></script>
 
   </body>
 </html>

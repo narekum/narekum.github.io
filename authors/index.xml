@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on Narendra Kumar</title>
@@ -238,20 +238,20 @@
     </item>
     
     <item>
-      <title>MVR Prasad</title>
-      <link>/authors/mvr-prasad/</link>
-      <pubDate>Thu, 01 Jul 2010 00:00:00 +0000</pubDate>
-      
-      <guid>/authors/mvr-prasad/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Md Zeeshan Ansari</title>
       <link>/authors/md-zeeshan-ansari/</link>
       <pubDate>Thu, 01 Jul 2010 00:00:00 +0000</pubDate>
       
       <guid>/authors/md-zeeshan-ansari/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MVR Prasad</title>
+      <link>/authors/mvr-prasad/</link>
+      <pubDate>Thu, 01 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/mvr-prasad/</guid>
       <description></description>
     </item>
     

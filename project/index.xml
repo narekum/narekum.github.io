@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Narendra Kumar</title>
@@ -28,6 +28,15 @@
       
       <guid>/project/eficaz2.5/</guid>
       <description>Enzyme Function Inference by a Combined Approach</description>
+    </item>
+    
+    <item>
+      <title>locStack</title>
+      <link>/project/locstack/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/project/locstack/</guid>
+      <description>Meta-analysis of genomic features</description>
     </item>
     
     <item>
@@ -73,15 +82,6 @@
       
       <guid>/project/sunpro/</guid>
       <description>A Database of Structure &amp;amp; FUNction Predictions of Proteins from Representative Organisms.</description>
-    </item>
-    
-    <item>
-      <title>locStack</title>
-      <link>/project/locstack/</link>
-      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/project/locstack/</guid>
-      <description>Meta-analysis of genomic features</description>
     </item>
     
     <item>
